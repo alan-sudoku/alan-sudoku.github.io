@@ -2,7 +2,7 @@
 title: Alan Sudoku
 ---
 
-A collection of frameworks for reasoning about self-invalidating systems, constraint theory, and argument structure.
+Frameworks for structured reasoning, argument audit, and AI-human collaboration.
 
 ## Contents
 
