@@ -3,7 +3,7 @@
 // ── Theme colors ──────────────────────────────────────────────────────────────
 :root[saved-theme="light"], :root:not([saved-theme="dark"]) {
   --light:     #f8f6f4;   // page background
-  --lightgray: #da7e37;   // borders, dividers
+  --lightgray: #763a00;   // borders, dividers
   --gray:      #9d6b53;   // meta text, muted elements
   --darkgray:  #2f0e07;   // body text
   --dark:      #38160d;   // headings, strong text
@@ -13,7 +13,7 @@
 :root[saved-theme="dark"] {
   --light:     #141204;   // page background
   --lightgray: #5e301a;   // borders, dividers
-  --gray:      #da7e37;   // meta text, muted elements
+  --gray:      #763a00;   // meta text, muted elements
   --darkgray:  #fceee2;   // body text
   --dark:      #ffdcc2;   // headings, strong text
   --secondary: #4d831e;   // links, folder names, accents
