@@ -1,3 +1,52 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ── Theme colors ──────────────────────────────────────────────────────────────
+:root[saved-theme="light"], :root:not([saved-theme="dark"]) {
+  --light:     #f8f6f4;   // page background
+  --lightgray: #da7e37;   // borders, dividers
+  --gray:      #9d6b53;   // meta text, muted elements
+  --darkgray:  #2f0e07;   // body text
+  --dark:      #38160d;   // headings, strong text
+  --secondary: #4f772d;   // links, folder names, accents
+  --tertiary:  #6a994e;   // hover states, italics
+}
+:root[saved-theme="dark"] {
+  --light:     #141204;   // page background
+  --lightgray: #5e301a;   // borders, dividers
+  --gray:      #da7e37;   // meta text, muted elements
+  --darkgray:  #fceee2;   // body text
+  --dark:      #ffdcc2;   // headings, strong text
+  --secondary: #4d831e;   // links, folder names, accents
+  --tertiary:  #619542;   // hover states, italics
+}
+
+// ── Font family ───────────────────────────────────────────────────────────────
+:root {
+  --bodyFont:   "Atkinson Hyperlegible Next", sans-serif;
+  --headerFont: "Atkinson Hyperlegible Next", sans-serif;
+  --codeFont:   "Atkinson Hyperlegible Mono", monospace;
+}
+
+// ── Typography ────────────────────────────────────────────────────────────────
+html {
+  font-size: 18px;
+}
+
+article {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1rem; }
+
+// ── Bold & Italic ─────────────────────────────────────────────────────────────
+article strong {
+  color: var(--dark);
+}
+
+article em {
+  color: var(--dark);
+}
