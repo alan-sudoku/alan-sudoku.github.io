@@ -143,6 +143,7 @@ plugins:
   - source: github:quartz-community/explorer
     enabled: true
     options:
+      folderDefaultState: "open"
       mapFn: |
         (node) => {
           if (node.isFolder) {
