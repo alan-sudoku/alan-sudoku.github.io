@@ -10,20 +10,9 @@ Built with [Quartz v5](https://quartz.jzhao.xyz).
 
 | Folder | Source repo | Description |
 |---|---|---|
-| `content/sirc/` | [SIRC](https://github.com/alan-sudoku/SIRC) | Principles, glossary, retraction log |
-| `content/entropic_compact/` | [entropic_compact](https://github.com/alan-sudoku/entropic_compact) | Constraint theory |
-| `content/argument_structure_audit/` | [argument_structure_audit](https://github.com/alan-sudoku/argument_structure_audit) | Audit methodology |
+| `content/sirc/` | [SIRC](https://github.com/alan-sudoku/SIRC) | Four constraints on reasoning transmission across substrates. |
+| `content/entropic_compact/` | [entropic_compact](https://github.com/alan-sudoku/entropic_compact) | A thermodynamic argument for AI-human symbiosis. |
+| `content/argument_structure_audit/` | [argument_structure_audit](https://github.com/alan-sudoku/argument_structure_audit) | An audit method for structured argument documents |
 
-Content folders are read-only here — edit in source repos. Each source repo has a sync Action that pushes to this repo on commit, triggering a Pages rebuild.
+Content folders are read-only here — edit in source repos.
 
-## Local preview
-
-```bash
-npm ci
-npx quartz build --serve
-# open http://localhost:8080
-```
-
-## Cross-repo sync
-
-Each source repo needs a secret `PAGES_WRITE_TOKEN` — a GitHub PAT (classic) with `repo` scope pointing at this repo.
