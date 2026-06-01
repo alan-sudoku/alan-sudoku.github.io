@@ -39,17 +39,21 @@ jobs:
         run: |
           mkdir -p content/sirc
           rsync -av --delete \
-            --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
+            --exclude='.github' --exclude='.git' --exclude='LICENSE' \
+            --exclude='archived/' --exclude='.DS_Store' --exclude='.gitignore' \
             _source_sirc/ content/sirc/
 
           mkdir -p content/entropic_compact
           rsync -av --delete \
-            --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
+            --exclude='.github' --exclude='.git' --exclude='LICENSE' \
+            --exclude='archived/' --exclude='.DS_Store' --exclude='.gitignore' \
             _source_ec/ content/entropic_compact/
 
           mkdir -p content/argument_structure_audit
           rsync -av --delete \
-            --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
+            --exclude='.github' --exclude='.git' --exclude='LICENSE' \
+            --exclude='archived/' --exclude='tools/' \
+            --exclude='.DS_Store' --exclude='.gitignore' \
             _source_asa/ content/argument_structure_audit/
 
       - name: Commit and push
