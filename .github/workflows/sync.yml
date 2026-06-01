@@ -37,26 +37,20 @@ jobs:
 
       - name: Sync content
         run: |
-          # SIRC — rename SIRC_principles.md to index.md for folder landing
           mkdir -p content/sirc
           rsync -av --delete \
             --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
             _source_sirc/ content/sirc/
-          mv content/sirc/SIRC_principles.md content/sirc/index.md
 
-          # entropic_compact — rename entropic_compact.md to index.md
           mkdir -p content/entropic_compact
           rsync -av --delete \
             --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
             _source_ec/ content/entropic_compact/
-          mv content/entropic_compact/entropic_compact.md content/entropic_compact/index.md
 
-          # argument_structure_audit — rename specification.md to index.md
           mkdir -p content/argument_structure_audit
           rsync -av --delete \
             --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
             _source_asa/ content/argument_structure_audit/
-          mv content/argument_structure_audit/specification.md content/argument_structure_audit/index.md
 
       - name: Commit and push
         run: |
