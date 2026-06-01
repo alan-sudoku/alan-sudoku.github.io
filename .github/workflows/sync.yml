@@ -41,13 +41,11 @@ jobs:
           rsync -av --delete \
             --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
             _source_sirc/ content/sirc/
-          mv content/sirc/SIRC_principles.md content/sirc/index.md
 
           mkdir -p content/entropic_compact
           rsync -av --delete \
             --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
             _source_ec/ content/entropic_compact/
-          mv content/entropic_compact/entropic_compact.md content/entropic_compact/index.md
 
           mkdir -p content/argument_structure_audit
           rsync -av --delete \
