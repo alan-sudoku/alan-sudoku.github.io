@@ -142,6 +142,15 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      mapFn: |
+        (node) => {
+          if (node.isFolder) {
+            node.displayName = node.slugSegment
+              .replace(/_/g, " ")
+              .replace(/\b\w/g, c => c.toUpperCase())
+          }
+        }
     layout:
       position: left
       priority: 50
