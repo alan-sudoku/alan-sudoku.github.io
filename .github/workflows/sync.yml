@@ -1,0 +1,67 @@
+name: Sync content from source repos
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # hourly
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Pages repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout SIRC
+        uses: actions/checkout@v4
+        with:
+          repository: alan-sudoku/SIRC
+          path: _source_sirc
+
+      - name: Checkout entropic_compact
+        uses: actions/checkout@v4
+        with:
+          repository: alan-sudoku/entropic_compact
+          path: _source_ec
+
+      - name: Checkout argument_structure_audit
+        uses: actions/checkout@v4
+        with:
+          repository: alan-sudoku/argument_structure_audit
+          path: _source_asa
+
+      - name: Sync content
+        run: |
+          # SIRC — rename SIRC_principles.md to index.md for folder landing
+          mkdir -p content/sirc
+          rsync -av --delete \
+            --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
+            _source_sirc/ content/sirc/
+          mv content/sirc/SIRC_principles.md content/sirc/index.md
+
+          # entropic_compact — rename entropic_compact.md to index.md
+          mkdir -p content/entropic_compact
+          rsync -av --delete \
+            --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
+            _source_ec/ content/entropic_compact/
+          mv content/entropic_compact/entropic_compact.md content/entropic_compact/index.md
+
+          # argument_structure_audit — rename specification.md to index.md
+          mkdir -p content/argument_structure_audit
+          rsync -av --delete \
+            --exclude='.github' --exclude='LICENSE' --exclude='archived/' \
+            _source_asa/ content/argument_structure_audit/
+          mv content/argument_structure_audit/specification.md content/argument_structure_audit/index.md
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git diff --cached --quiet || git commit -m "sync: content from source repos"
+          git push
