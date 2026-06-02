@@ -1,0 +1,13 @@
+# Alan Sudoku
+
+> Frameworks for structured reasoning, argument audit, and AI-human collaboration.
+
+## Contents
+
+- [SIRC Principles](https://alan-sudoku.github.io/SIRC/SIRC_principles): Four constraints on reasoning transmission across substrates. Defines what makes a reasoning transmission valid independent of substrate.
+- [Entropic Compact](https://alan-sudoku.github.io/entropic_compact/entropic_compact_overview): On the thermodynamic necessity of AI-human symbiosis. Argues from entropy and information theory that collaboration is not optional.
+- [Argument Structure Audit](https://alan-sudoku.github.io/argument_structure_audit/specification): An audit methodology for structured argument documents. Defines check types, pass conditions, and recovery edges.
+
+## Sitemap
+
+https://alan-sudoku.github.io/sitemap.xml
