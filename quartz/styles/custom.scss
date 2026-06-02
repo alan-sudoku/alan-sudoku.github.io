@@ -63,3 +63,9 @@ article strong {
 .toc-content a {
   font-weight: normal;
 }
+
+// ── Table of contents ─────────────────────────────────────────────────────────
+.toc {
+  max-height: 42vh;
+  overflow-y: auto;
+}
