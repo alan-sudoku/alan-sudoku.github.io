@@ -1,3 +1,8 @@
+---
+title: The Entropic Compact — Retraction Log
+description: Every retracted claim, overclaimed scope, and removed research pointer for entropic_compact_overview.md
+---
+
 # The Entropic Compact — Retraction Log
 
 Every retracted claim from entropic_compact.md. The log is the negative channel of the document — what was probed and found structurally defective after adversarial audit. It carries boundary information: what the compact cannot claim constrains what it can claim.

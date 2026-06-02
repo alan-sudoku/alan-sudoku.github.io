@@ -19,6 +19,7 @@ Four constraints on what a transmission must preserve to count as communication 
 
 | File | Role |
 | :--- | :--- |
+| `abstract.md` | Deposit metadata — title, abstract, keywords, version, and licence for DOI submission. |
 | `SIRC_principles.md` | The Protocol Constraints — $\mathsf{P1}\text{–}\mathsf{P4}$ with proofs, open questions, and scope conditions. The positive channel: what survives audit. |
 | `SIRC_principles_retraction.md` | The retraction log — every claim probed and found absent. The negative channel: what was shed. |
 | `SIRC_principles_audit_prompt.md` | Adversarial audit prompt — structured attacks for an AI auditor to run against the principles. |

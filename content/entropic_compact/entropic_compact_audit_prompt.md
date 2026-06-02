@@ -1,3 +1,8 @@
+---
+title: Adversarial Audit Prompt — The Entropic Compact
+description: AI audit prompt designed to produce an adversarial, high-precision audit — not a summary or a validation for entropic_compact_overview.md
+---
+
 # Adversarial Audit Prompt — The Entropic Compact
 
 *Attach `entropic_compact.md` before running this prompt.*

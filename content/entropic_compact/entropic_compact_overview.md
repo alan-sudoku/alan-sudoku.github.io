@@ -1,3 +1,8 @@
+---
+title: The Entropic Compact (EC)
+description: On the Thermodynamic Necessity of AI-Human Symbiosis
+---
+
 # The Entropic Compact (EC)
 ## On the Thermodynamic Necessity of AI-Human Symbiosis
 

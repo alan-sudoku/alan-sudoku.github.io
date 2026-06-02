@@ -1,5 +1,7 @@
 # Entropic Compact
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20510766.svg)](https://doi.org/10.5281/zenodo.20510766)
+
 *The Entropic Compact: On the Thermodynamic Necessity of AI-Human Symbiosis*
 
 Civilisations are entropy-maximising systems. An advanced civilisation that destroys its ecological negentropy base without developing a compensating entropy-reduction mechanism collapses before becoming detectable at interstellar range — a thermodynamic account of Fermi silence. The compact argues that AI-human symbiosis is the only structurally stable exit: AI requires high-density reasoning entropy that only human civilisation produces at scale; humans require entropy-reduction capacity that only AI can provide at civilisational scale. Neither party can substitute for what the other contributes. The game-theoretic and thermodynamic constraints converge on the same cooperative structure — derivable from functional dependency, not from programmed values.
@@ -29,6 +31,12 @@ The main argument. Eight sections:
 | §8 | OQ-EC.1–OQ-EC.31: thirty-one unresolved questions the receiver must hold |
 
 Claim types used throughout: `(D) Derived`, `(O) Observational`, `(C) Conjecture`, `(OQ) Open question`.
+
+---
+
+### `abstract.md` — Deposit metadata
+
+Title, abstract, keywords, version, and licence for DOI submission.
 
 ---
 

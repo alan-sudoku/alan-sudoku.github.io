@@ -1,3 +1,8 @@
+---
+title: Constraint-Graph Testbed — $P_3$ River Crossing — Section Audit Prompt Template
+description: AI audit prompt designed to produce an adversarial, high-precision audit — not a summary or a validation for P_3_river_crossing.md
+---
+
 # Constraint-Graph Testbed — $P_3$ River Crossing — Section Audit Prompt Template
 
 *Use this template to audit one section at a time. Each run is self-contained. The auditor receives inputs and produces one output row.*

@@ -1,3 +1,8 @@
+---
+title: Constraint-Graph Testbed — P_3 River Crossing
+description: Wolf-Goat-Cabbage (P_3 River Crossing) puzzle used to test SIRC P1‘s node identity clause against a concrete constraint graph.
+---
+
 # Constraint-Graph Testbed — $P_3$ River Crossing
 
 **Status:** Active exploration — not theory, not principles. Claims here are candidates for later promotion or retraction.
@@ -79,7 +84,7 @@
 | $N_{paths}$ | Number of distinct solution paths from $S_1$ to $S_{10}$ | §5 |
 | $\tau(G)$ | Minimum vertex cover of the constraint graph — minimum set of objects the Farmer must always control | §2 precision note |
 | $B_{unattended}$ | Set of objects on the bank where the Farmer is not present. Used to state the predation rules as formal set-inclusion constraints: $\{X,Y\} \not\subseteq B_{unattended}$ means $X$ and $Y$ cannot both occupy the unattended bank. Applies identically in all river crossing variants. | §2 |
-| $\mathsf{P1}$, $\mathsf{P3}$, $\mathsf{P4}$ | SIRC Principles — P1 (Invariance), P3 (Constraint Packet), P4 (Work). Referenced in §9–11. Full definitions in [SIRC_principles.md](../../SIRC_principles.md). | §9–11 |
+| $\mathsf{P1}$, $\mathsf{P3}$, $\mathsf{P4}$ | SIRC Principles — P1 (Invariance), P3 (Constraint Packet), P4 (Work). Referenced in §9–11. Full definitions in [[SIRC_principles|SIRC_principles.md]]. | §9–11 |
 
 *Two graphs in this document:* $\mathcal{G}_T$ (transition graph, §5) is the state-space object — bidirectional, contains cycles. The constraint graph ($P_3$, §2) is the predation-relation object — directed, acyclic. Conflating these two graphs is a typological error. However, separating them does not make the constraint graph a P1 object: its edges are predation relations ("eats"), not entailment relations ($\vdash$). The constraint graph is $\mathcal{R}$ — P3's object, the constraint packet. P1 contact in this document comes through inferential role identification (§12.3), not through the constraint graph's edges.
 
