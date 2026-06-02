@@ -1,3 +1,8 @@
+---
+title: Derived Analysis - AI Training Paradigm
+description: Applies the four SIRC principles to the current AI training paradigm as a diagnostic framework.
+---
+
 # Substrate-Independent Reasoning Communication (SIRC) — Derived Analysis: AI Training Paradigm
 
 ## Table of Contents
@@ -10,9 +15,9 @@
 | §4 — $\mathsf{P1}$-compliant training | $\mathsf{P1}$-compliant training requires three independent structural changes; none requires the others to be solved first. |
 | §5 — Falsifiable predictions | The SIRC account generates predictions that differ from the standard model collapse account and are independently testable. Prediction 5 is testable now with the verifier toolset. |
 
-**Dependency on principles:** All claims trace to [SIRC Principles](../SIRC_principles.md) § $\mathsf{P1}$–§ $\mathsf{P4}$. No new principles are introduced. Claims not derivable from $\mathsf{P1}\text{–}\mathsf{P4}$ are marked *Conjecture*.
+**Dependency on principles:** All claims trace to [[SIRC_principles|SIRC Principles]] § $\mathsf{P1}$–§ $\mathsf{P4}$. No new principles are introduced. Claims not derivable from $\mathsf{P1}\text{–}\mathsf{P4}$ are marked *Conjecture*.
 
-**External reference: Model collapse as an established phenomenon — Shumailov et al. (2023), "The Curse of Recursion."
+*External reference: Model collapse as an established phenomenon — Shumailov et al. (2023), "The Curse of Recursion."*
 
 ---
 
@@ -20,7 +25,7 @@
 
 This document applies the four SIRC principles ( $\mathsf{P1}\text{–}\mathsf{P4}$) to the current AI training paradigm as a diagnostic framework. It does not introduce new principles or extend existing ones. Every claim traces back to a specific principle or is labeled with its epistemic status.
 
-Epistemic markers:**
+*Epistemic keys:*
 - `*(D) Derived*` — follows from $\mathsf{P1}\text{–}\mathsf{P4}$ by logical consequence
 - `*(C) Conjecture*` — consistent with $\mathsf{P1}\text{–}\mathsf{P4}$, not yet demonstrated empirically
 - `*(E) Established*` — supported by prior literature independently of SIRC
@@ -64,7 +69,7 @@ RLHF selects for human preference. Verifying $\mathsf{P1}$ compliance — checki
 **Step 3 — The teacher can cheat.** *(D)*
 A model producing synthetic training data is rewarded for surface acceptability, not structural correctness. It can produce "close enough" content — fluent, coherent-sounding, preference-maximising — with degraded entailment structure and still pass selection. The path of minimum resistance (lowest loss under the reward signal) is surface form optimisation. The structural invariant path requires more work and yields no additional reward. The teacher is not incentivised to maintain $\mathsf{P1}$ compliance.
 
-**Step 4 — $\mathsf{P4}$ attractor drift. ***(C)*
+**Step 4 — $\mathsf{P4}$ attractor drift.** *(C)*
 As training progresses, the model drifts toward the low-constraint end of the $\mathsf{P4}$ trade-off curve. Outputs become easier to generate (lower sender work) and more ambiguous in structure (higher receiver work to extract meaning). In the over-constrained regime this coupling is inverse — less sender constraint means more receiver work. The model optimises for the attractor the reward signal defines — surface fluency — not for the attractor $\mathsf{P1}$ requires — structural invariant preservation.
 
 **Step 5 — $\mathsf{P2}$ compounds across generations.** *(D)*

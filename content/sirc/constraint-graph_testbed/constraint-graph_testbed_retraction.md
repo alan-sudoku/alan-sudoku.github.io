@@ -1,3 +1,8 @@
+---
+title: Constraint-Graph Testbed Series — Retraction Log
+description: Every retracted claim, overclaimed scope, and removed research pointer for constraint-graph_testbed puzzle exploration.
+---
+
 # Constraint-Graph Testbed Series — Retraction Log
 
 Every retracted claim, overclaimed scope, and corrected assessment across the Constraint-Graph Testbed series. The log is the negative channel ( $C_- $) of the series — what was probed and found absent or misformulated. It carries boundary information: what the experiment series cannot claim constrains what it can claim.
