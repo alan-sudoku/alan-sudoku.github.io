@@ -37,11 +37,11 @@ jobs:
 
       - name: Sync content
         run: |
-          mkdir -p content/sirc
+          mkdir -p content/SIRC
           rsync -av --delete \
             --exclude='.github' --exclude='.git' --exclude='LICENSE' \
             --exclude='archived/' --exclude='.DS_Store' --exclude='.gitignore' \
-            _source_sirc/ content/sirc/
+            _source_sirc/ content/SIRC/
 
           mkdir -p content/entropic_compact
           rsync -av --delete \

@@ -147,9 +147,7 @@ plugins:
       mapFn: |
         (node) => {
           if (node.isFolder) {
-            const overrides = { "sirc": "SIRC" }
-            node.displayName = overrides[node.slugSegment] ??
-              node.slugSegment.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase())
+            node.displayName = node.slugSegment.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase())
           } else {
             node.displayName = node.slugSegment
               .replace(/_/g, " ")
