@@ -150,6 +150,11 @@ plugins:
             const overrides = { "sirc": "SIRC" }
             node.displayName = overrides[node.slugSegment] ??
               node.slugSegment.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase())
+          } else {
+            node.displayName = node.slugSegment
+              .replace(/_/g, " ")
+              .replace(/\bsirc\b/gi, "SIRC")
+              .replace(/^\w/, c => c.toUpperCase())
           }
         }
     layout:
