@@ -1,3 +1,8 @@
+---
+title: SIRC Protocol Constraints — Retraction Log
+description: Every retracted claim, overclaimed scope, and removed research pointer for SIRC_principles.md
+---
+
 # SIRC Protocol Constraints — Retraction Log
 
 Every retracted claim, overclaimed scope, and removed research pointer. The log is the negative channel ( $C_-$) of the document — what was probed and found absent. It carries boundary information: what the constraints cannot claim constrains what they can claim.

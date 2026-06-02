@@ -1,3 +1,8 @@
+---
+title: SIRC Protocol Constraints — Audit Prompt
+description: AI audit prompt designed to produce an adversarial, high-precision audit — not a summary or a validation for SIRC_principles.md
+---
+
 # SIRC Protocol Constraints — Audit Prompt
 
 Use this prompt with an AI system and `SIRC_principles.md` attached. It is designed to produce an adversarial, high-precision audit — not a summary or a validation.

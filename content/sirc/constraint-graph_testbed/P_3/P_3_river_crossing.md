@@ -2,7 +2,7 @@
 
 **Status:** Active exploration — not theory, not principles. Claims here are candidates for later promotion or retraction.
 
-**Purpose:** Use the Wolf-Goat-Cabbage river crossing puzzle to make concrete the constraint-graph construction rules that $\mathsf{P1}$'s node identity clause implies. The state-space of this puzzle is a bidirectional transition graph (not a DAG); the constraint structure over predation relations is a directed $P_3$ path (a DAG). This document analyses both, but the SIRC-relevant object is the constraint graph. If the puzzle can be fully described as a SIRC constraint packet, that tells us something about what general constraint-graph construction requires.
+**Purpose:** Uses the Wolf-Goat-Cabbage puzzle to test $\mathsf{P1}$'s node identity clause against a concrete constraint graph. The state-space of this puzzle is a bidirectional transition graph (not a DAG); the constraint structure over predation relations is a directed $P_3$ path (a DAG). This document analyses both, but the SIRC-relevant object is the constraint graph. If the puzzle can be fully described as a SIRC constraint packet, that tells us something about what general constraint-graph construction requires.
 
 **Companion document:** `P_4_river_crossing.md` *(forthcoming)* — extends this analysis to a $P_4$ constraint graph (Fox–Chicken–Caterpillar–Leaf). Results here are the baseline all $\mathsf{P4}$ claims are compared against.
 

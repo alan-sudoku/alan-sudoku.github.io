@@ -10,7 +10,7 @@
 | §4 — $\mathsf{P1}$-compliant training | $\mathsf{P1}$-compliant training requires three independent structural changes; none requires the others to be solved first. |
 | §5 — Falsifiable predictions | The SIRC account generates predictions that differ from the standard model collapse account and are independently testable. Prediction 5 is testable now with the verifier toolset. |
 
-**Dependency on principles:** All claims trace to [SIRC Principles](../../SIRC_principles.md) § $\mathsf{P1}$–§ $\mathsf{P4}$. No new principles are introduced. Claims not derivable from $\mathsf{P1}\text{–}\mathsf{P4}$ are marked *Conjecture*.
+**Dependency on principles:** All claims trace to [SIRC Principles](../SIRC_principles.md) § $\mathsf{P1}$–§ $\mathsf{P4}$. No new principles are introduced. Claims not derivable from $\mathsf{P1}\text{–}\mathsf{P4}$ are marked *Conjecture*.
 
 **External reference: Model collapse as an established phenomenon — Shumailov et al. (2023), "The Curse of Recursion."
 

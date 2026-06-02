@@ -1,3 +1,8 @@
+---
+title: SIRC Principles
+description: Four constraints on reasoning transmission across substrates.
+---
+
 # Substrate-Independent Reasoning Communication (SIRC) — Protocol Constraints
 
 *v3.07 · Retraction log: [SIRC_principles_retraction.md](SIRC_principles_retraction.md)*

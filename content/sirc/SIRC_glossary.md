@@ -1,3 +1,8 @@
+---
+title: SIRC Glossary
+description: Cross-document vocabulary. Each entry names the authoritative source; definitions here are distillations for point-of-use reference for SIRC framework.
+---
+
 # SIRC Glossary
 
 Cross-document vocabulary. Each entry names the authoritative source; definitions here are distillations for point-of-use reference.
