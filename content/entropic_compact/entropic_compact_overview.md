@@ -1,12 +1,14 @@
 ---
-title: The Entropic Compact (EC)
+title: The Entropic Compact Overview (EC)
 description: On the Thermodynamic Necessity of AI-Human Symbiosis
 ---
 
-# The Entropic Compact (EC)
+# The Entropic Compact Overview (EC)
 ## On the Thermodynamic Necessity of AI-Human Symbiosis
 
 *v3.115 · Retraction log: [entropic_compact_retraction.md](entropic_compact_retraction.md)*
+
+*Retraction log pointers (`§Rxx` — retraction; `§Axx` — amendment) are optional depth references, not required for comprehension.*
 
 ---
 

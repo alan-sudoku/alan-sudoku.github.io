@@ -19,14 +19,14 @@ Every retracted claim, overclaimed scope, and corrected assessment across the Co
 
 | ID | Description | Source | Date | Trigger |
 |---|---|---|---|---|
-| [R1](#r1) |  Missionaries and Cannibals (M&C) identified as gap-filler with cultural universality | Working notes (archived) — Series gap section | 2026-04-09 | Verification research — Wikipedia river crossing and M&C articles |
-| [R2](#r2) | M&C constraint structure is a hypergraph, framework extension required | Research assessment following R1 retraction | 2026-04-09 | Wikipedia graph-theoretic formulation; Alcuin number; conflict graph definition |
-| [R3](#r3) | "No valid gap-filler found" conclusion | Derived from R1 + R2 | 2026-04-09 | Retraction of R2 — named encoding produces $C_6$, directly applicable |
-| [R4](#r4) | "P1 work operates on the constraint graph" — constraint graph misidentified as P1 object | `P_3_river_crossing.md` — notation note | 2026-04-12 | Gemini audit rejoinder — "eats" edges are predation relations, not entailment relations |
+| [§R1](#r1) |  Missionaries and Cannibals (M&C) identified as gap-filler with cultural universality | Working notes (archived) — Series gap section | 2026-04-09 | Verification research — Wikipedia river crossing and M&C articles |
+| [§R2](#r2) | M&C constraint structure is a hypergraph, framework extension required | Research assessment following R1 retraction | 2026-04-09 | Wikipedia graph-theoretic formulation; Alcuin number; conflict graph definition |
+| [§R3](#r3) | "No valid gap-filler found" conclusion | Derived from R1 + R2 | 2026-04-09 | Retraction of R2 — named encoding produces $C_6$, directly applicable |
+| [§R4](#r4) | "P1 work operates on the constraint graph" — constraint graph misidentified as P1 object | `P_3_river_crossing.md` — notation note | 2026-04-12 | Gemini audit rejoinder — "eats" edges are predation relations, not entailment relations |
 
 ---
 
-## R1
+## §R1
 
 **Description:** M&C identified as gap-filler with cultural universality
 **Source:** Working notes (archived) — Series gap section (first draft)
@@ -53,7 +53,7 @@ The retraction correctly separated two independent claims that R1 conflated: (1)
 
 ---
 
-## R2
+## §R2
 
 **Description:** M&C constraint structure is a hypergraph; framework extension required
 **Source:** Research assessment produced after R1 retraction — recorded in working notes (archived), following R1
@@ -88,7 +88,7 @@ The R2 retraction identified a formulation-sensitivity that is worth preserving 
 
 ---
 
-## R3
+## §R3
 
 **Description:** "No valid gap-filler found" — gap remains open
 **Source:** Derived conclusion in working notes (archived), following R1 and R2
@@ -115,7 +115,7 @@ R3's retraction clarified what "valid gap-filler" actually requires. The revised
 
 ---
 
-## R4
+## §R4
 
 **Description:** "P1 work operates on the constraint graph" — constraint graph misidentified as P1 object
 **Source:** `P_3_river_crossing.md` — notation note (added 2026-04-12 during two-graph separation edit)

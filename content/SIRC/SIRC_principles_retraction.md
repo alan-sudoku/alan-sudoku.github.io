@@ -7,7 +7,7 @@ description: Every retracted claim, overclaimed scope, and removed research poin
 
 Every retracted claim, overclaimed scope, and removed research pointer. The log is the negative channel ( $C_-$) of the document — what was probed and found absent. It carries boundary information: what the constraints cannot claim constrains what they can claim.
 
-**Structural role (SIRC vocabulary):** `SIRC_principles.md` is the positive channel ( $C_+$) — the invariant content that survived audit. This log is $C_-$ — the designed mutation record. Each entry is a claim that appeared to belong to $C_+$ (a foundational constraint) but was shown to be non-invariant surface: an overclaimed formalization, a loaded term, or a scope that could not be defended. Shedding these is $\mathsf{P2}$-governed behaviour, not failure. The two documents together form a complete transmission record.
+**Structural role (SIRC vocabulary):** [SIRC_principles.md](SIRC_principles.md) is the positive channel ( $C_+$) — the invariant content that survived audit. This log is $C_-$ — the designed mutation record. Each entry is a claim that appeared to belong to $C_+$ (a foundational constraint) but was shown to be non-invariant surface: an overclaimed formalization, a loaded term, or a scope that could not be defended. Shedding these is $\mathsf{P2}$-governed behaviour, not failure. The two documents together form a complete transmission record.
 
 **Entry format:** ID · Source · Date · Audit trigger · Why retracted · Exact retracted content · What replaces it · Exploration value
 

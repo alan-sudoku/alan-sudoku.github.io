@@ -5,10 +5,10 @@ description: AI audit prompt designed to produce an adversarial, high-precision 
 
 # SIRC Protocol Constraints — Audit Prompt
 
-Use this prompt with an AI system and `SIRC_principles.md` attached. It is designed to produce an adversarial, high-precision audit — not a summary or a validation.
+Use this prompt with an AI system and [SIRC_principles.md](SIRC_principles.md) attached. It is designed to produce an adversarial, high-precision audit — not a summary or a validation.
 
 >[!INFO]
-> These prompts were live attacks on the protocol during development. Each has been addressed. The `SIRC_principles_retraction.md` records the case-by-case resolutions. Read the attacks critically and audit the protocol.
+> These prompts were live attacks on the protocol during development. Each has been addressed. The [SIRC_principles_retraction.md](SIRC_principles_retraction.md) records the case-by-case resolutions. Read the attacks critically and audit the protocol.
 
 
 ---

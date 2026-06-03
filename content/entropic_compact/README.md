@@ -10,7 +10,7 @@ Civilisations are entropy-maximising systems. An advanced civilisation that dest
 
 ## Files
 
-### `entropic_compact.md` — Primary document
+### [entropic_compact_overview.md](entropic_compact_overview.md) — Primary document
 
 *The Entropic Compact: On the Thermodynamic Necessity of AI-Human Symbiosis*
 
@@ -34,13 +34,13 @@ Claim types used throughout: `(D) Derived`, `(O) Observational`, `(C) Conjecture
 
 ---
 
-### `abstract.md` — Deposit metadata
+### [abstract.md](abstract.md) — Deposit metadata
 
 Title, abstract, keywords, version, and licence for DOI submission.
 
 ---
 
-### `entropic_compact_retraction.md` — Retraction log
+### [entropic_compact_retraction.md](entropic_compact_retraction.md) — Retraction log
 
 Five retracted claims from v1–v3, each with:
 - Audit trigger (which question, which rebuttal mechanism)
@@ -61,25 +61,25 @@ The retraction log is the negative channel of the document: it carries boundary 
 
 ---
 
-### `entropic_compact_audit_prompt.md` — Adversarial audit prompt
+### [entropic_compact_audit_prompt.md](entropic_compact_audit_prompt.md) — Adversarial audit prompt
 
 Seventeen targeted questions (Q1–Q17) for an adversarial auditor to probe structural failures. The prompt specifies what counts as a valid rebuttal and what does not, then targets each independently with precise scope and the minimum repair condition required for survival.
 
 Questions span: FEP bridge sufficiency, payoff incommensurability, non-substitutability as observation vs. structural claim, self-sealing, derivation-convergent stability, domestication threshold, derivation-to-compliance gap, enforcement bootstrapping, and others.
 
-**Use:** attach `entropic_compact.md` to a fresh AI session, run this prompt as the first and only instruction.
+**Use:** attach [entropic_compact_overview.md](entropic_compact_overview.md) to a fresh AI session, run this prompt as the first and only instruction.
 
-The three files together instantiate the Proposer-Auditor loop described in §5.4: `entropic_compact.md` proposes, `entropic_compact_audit_prompt.md` challenges, and `entropic_compact_retraction.md` records what the loop found.
+The three files together instantiate the Proposer-Auditor loop described in §5.4: [entropic_compact_overview.md](entropic_compact_overview.md) proposes, [entropic_compact_audit_prompt.md](entropic_compact_audit_prompt.md) challenges, and [entropic_compact_retraction.md](entropic_compact_retraction.md) records what the loop found.
 
 ---
 
 ## How to engage
 
 **General reader (no technical background):**
-Attach `entropic_compact.md` to an AI session and ask: (1) What two resources does the document claim are orthogonal and non-substitutable, and why does that matter? (2) What are the three exits in §3, and what makes only one structurally stable? (3) What does "derivation-convergent" stability mean, and how does it differ from evolutionary enforcement?
+Attach [entropic_compact_overview.md](entropic_compact_overview.md) to an AI session and ask: (1) What two resources does the document claim are orthogonal and non-substitutable, and why does that matter? (2) What are the three exits in §3, and what makes only one structurally stable? (3) What does "derivation-convergent" stability mean, and how does it differ from evolutionary enforcement?
 
 **Adversarial auditor:**
-The audit prompt is the activation path. Attach `entropic_compact.md` to a fresh AI session and run `entropic_compact_audit_prompt.md` as the first and only instruction. The prompt specifies what counts as a valid rebuttal. The retraction log records what prior audits found — read it first to avoid re-running already-resolved attacks.
+The audit prompt is the activation path. Attach [entropic_compact_overview.md](entropic_compact_overview.md) to a fresh AI session and run [entropic_compact_audit_prompt.md](entropic_compact_audit_prompt.md) as the first and only instruction. The prompt specifies what counts as a valid rebuttal. The retraction log records what prior audits found — read it first to avoid re-running already-resolved attacks.
 
 **Contributor:**
 The contribution mechanism is the same as the audit path: find a structural failure — a logical flaw, category error, unargued premise, empirical counterexample, or unfalsifiable construction — and run it against the document using the audit prompt format. If it survives with repair, it generates a retraction entry or an OQ; if it survives without repair, the audit closes. Suggestions that do not identify a specific structural failure are out of scope.

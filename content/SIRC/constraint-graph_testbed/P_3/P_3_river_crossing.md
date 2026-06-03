@@ -9,6 +9,8 @@ description: Wolf-Goat-Cabbage (P_3 River Crossing) puzzle used to test SIRC P1�
 
 *Retraction log pointers (`§Rxx` — retraction; `§Axx` — amendment) are optional depth references, not required for comprehension.*
 
+---
+
 **Status:** Active exploration — not theory, not principles. Claims here are candidates for later promotion or retraction.
 
 **Purpose:** Uses the Wolf-Goat-Cabbage puzzle to test $\mathsf{P1}$'s node identity clause against a concrete constraint graph. The state-space of this puzzle is a bidirectional transition graph (not a DAG); the constraint structure over predation relations is a directed $P_3$ path (a DAG). This document analyses both, but the SIRC-relevant object is the constraint graph. If the puzzle can be fully described as a SIRC constraint packet, that tells us something about what general constraint-graph construction requires.
@@ -88,7 +90,7 @@ description: Wolf-Goat-Cabbage (P_3 River Crossing) puzzle used to test SIRC P1�
 | $N_{paths}$ | Number of distinct solution paths from $S_1$ to $S_{10}$ | §5 |
 | $\tau(G)$ | Minimum vertex cover of the constraint graph — minimum set of objects the Farmer must always control | §2 precision note |
 | $B_{unattended}$ | Set of objects on the bank where the Farmer is not present. Used to state the predation rules as formal set-inclusion constraints: $\{X,Y\} \not\subseteq B_{unattended}$ means $X$ and $Y$ cannot both occupy the unattended bank. Applies identically in all river crossing variants. | §2 |
-| $\mathsf{P1}$, $\mathsf{P3}$, $\mathsf{P4}$ | SIRC Principles — P1 (Invariance), P3 (Constraint Packet), P4 (Work). Referenced in §9–11. Full definitions in [[SIRC_principles|SIRC_principles.md]]. | §9–11 |
+| $\mathsf{P1}$, $\mathsf{P3}$, $\mathsf{P4}$ | SIRC Principles — P1 (Invariance), P3 (Constraint Packet), P4 (Work). Referenced in §9–11. Full definitions in [SIRC_principles.md](SIRC_principles.md). | §9–11 |
 
 *Two graphs in this document:* $\mathcal{G}_T$ (transition graph, §5) is the state-space object — bidirectional, contains cycles. The constraint graph ($P_3$, §2) is the predation-relation object — directed, acyclic. Conflating these two graphs is a typological error. However, separating them does not make the constraint graph a P1 object: its edges are predation relations ("eats"), not entailment relations ($\vdash$). The constraint graph is $\mathcal{R}$ — P3's object, the constraint packet. P1 contact in this document comes through inferential role identification (§12.3), not through the constraint graph's edges.
 
@@ -105,7 +107,7 @@ All claims in §1–5 are derivable by direct enumeration of the $2^4$ state spa
 The river crossing puzzle has a complete, enumerable state space. Every valid state, every invalid state, every transition can be listed and checked. This makes it a testbed for three questions raised by $\mathsf{P1}$'s node identity clause:
 
 1. **Node identity without labels** — can every node be identified by its inferential role alone (what precedes it, what follows it) with no reference to its name?
-2. **Minimum sufficient boundary conditions** (OQ3.1, `SIRC_principles.md` §P3 — what constitutes the minimum sufficient boundary conditions for a reasoning structure) — what is the smallest constraint set that uniquely determines the valid state space?
+2. **Minimum sufficient boundary conditions** (OQ3.1, [SIRC_principles.md](SIRC_principles.md) §P3 — what constitutes the minimum sufficient boundary conditions for a reasoning structure) — what is the smallest constraint set that uniquely determines the valid state space?
 3. **Nomenclature mismatch as node identity failure** — if sender and receiver define the same term with different inferential roles, does the DAG change structurally, not just lexically?
 
 ---
@@ -399,7 +401,7 @@ These conclusions are forced by $\mathcal{R}$, not by the paths. Path A and Path
 
 This surfaces the P1 question: when two receivers reconstruct different solution paths from the same constraint packet, do they reconstruct the same information? Under $\mathsf{P1}$'s entailment equivalence (not isomorphism), both paths carry the same $\mathcal{R}$-forced conclusions — the conclusion set is path-invariant.
 
-Under a stricter definition requiring structural isomorphism, Path A and Path B are *not* the same invariant. OQ1.1 (`SIRC_principles.md` §P1 — whether the invariant requires minimal dependency structure or permits equivalent non-minimal derivations) is not resolved by this puzzle — the puzzle makes the question concrete:
+Under a stricter definition requiring structural isomorphism, Path A and Path B are *not* the same invariant. OQ1.1 ([SIRC_principles.md](SIRC_principles.md) §P1 — whether the invariant requires minimal dependency structure or permits equivalent non-minimal derivations) is not resolved by this puzzle — the puzzle makes the question concrete:
 
 > When a sender transmits "the puzzle is solvable and the *Goat* must move first and last," which reconstruction is the invariant — Path A, Path B, or their union?
 
@@ -468,7 +470,7 @@ $P_3$ is the unique 3-node constraint graph that is simultaneously solvable and 
 
 This claim is a candidate, not an established result. It predicts: $P_3$ puzzles will have independent cultural origins; constraint graphs that are not at fitness peaks (trivial or unsolvable) will not. Cultural universality evidence for $P_4$ and Tower of Hanoi puzzle would further support the claim; absence of such evidence would suggest the puzzle exceeds the complexity threshold for oral transmission without written notation, rather than a structural fitness peak.
 
-The connection to the SAT phase transition (OQ4.1, `SIRC_principles.md` §P4 — sender/receiver work asymmetry): in constraint satisfaction problems, there is a critical ratio of constraints to variables at which problems transition sharply from almost certainly satisfiable to almost certainly unsatisfiable — and where problem-solving cost peaks. Constraint problems cluster at this boundary where problems are hardest. The river crossing puzzle sits at that boundary by construction. Whether the fitness peak criterion ("connected but not complete") is the topological expression of the SAT phase transition condition is an open direction.
+The connection to the SAT phase transition (OQ4.1, [SIRC_principles.md](SIRC_principles.md) §P4 — sender/receiver work asymmetry): in constraint satisfaction problems, there is a critical ratio of constraints to variables at which problems transition sharply from almost certainly satisfiable to almost certainly unsatisfiable — and where problem-solving cost peaks. Constraint problems cluster at this boundary where problems are hardest. The river crossing puzzle sits at that boundary by construction. Whether the fitness peak criterion ("connected but not complete") is the topological expression of the SAT phase transition condition is an open direction.
 
 #### §12.3 Node identity across cultural substrates — $\mathsf{P3}$ evidence for a $\mathsf{P1}$ question
 
@@ -509,19 +511,19 @@ Whether this directionality is part of the $\mathsf{P1}$ invariant or a cultural
 
 **Dynamic constraints.** The predation rules are static — they do not change during the puzzle. SIRC's constraint packets for reasoning structures may need to encode dynamic constraints (rules that activate conditionally depending on state). The river crossing puzzle does not test this.
 
-**Receiver substrate capacity.** The river crossing "Receiver" (a human or algorithm) has sufficient capacity to search the 10-node graph trivially. OQ3.2 (`SIRC_principles.md` §P3 — whether a formally correct packet that a receiver lacks capacity to resolve is a P3 failure or a separate condition) is not exercised here.
+**Receiver substrate capacity.** The river crossing "Receiver" (a human or algorithm) has sufficient capacity to search the 10-node graph trivially. OQ3.2 ([SIRC_principles.md](SIRC_principles.md) §P3 — whether a formally correct packet that a receiver lacks capacity to resolve is a P3 failure or a separate condition) is not exercised here.
 
 ---
 
 ### §14. Open questions for general constraint-graph construction
 
-**OQ-P_3-CG.1 — Node identity extraction.** In a neural substrate, there is no explicit state vector — only activation patterns. How do you extract the inferential role of a node from activations without being given the state encoding? This is OQ1.2 (`SIRC_principles.md` §P1 — extractability of invariants from neural substrates) made concrete.
+**OQ-P_3-CG.1 — Node identity extraction.** In a neural substrate, there is no explicit state vector — only activation patterns. How do you extract the inferential role of a node from activations without being given the state encoding? This is OQ1.2 ([SIRC_principles.md](SIRC_principles.md) §P1 — extractability of invariants from neural substrates) made concrete.
 
 **OQ-P_3-CG.2 — Constraint geometry.** The two predation rules share one object ($G$). It is this overlap that creates the Goat-must-move-first constraint. A set of two predation rules with no shared object (e.g., $\{W,G\}$ unsafe, $\{F,C\}$ unsafe) would produce a different graph. The constraint geometry — which objects appear in multiple rules — determines the topology of the solution DAG. Formalising this relationship is the open direction.
 
-**OQ-P_3-CG.3 — Multiple solutions and the invariant.** When a constraint packet permits two solutions, what is the invariant? Is it the union of both paths? The intersection? The common subgraph? The entailment shared by both (*Goat* must move first and last)? This is OQ1.1 (`SIRC_principles.md` §P1) applied to a concrete case.
+**OQ-P_3-CG.3 — Multiple solutions and the invariant.** When a constraint packet permits two solutions, what is the invariant? Is it the union of both paths? The intersection? The common subgraph? The entailment shared by both (*Goat* must move first and last)? This is OQ1.1 ([SIRC_principles.md](SIRC_principles.md) §P1) applied to a concrete case.
 
-**OQ-P_3-CG.4 — Transmission of constraint packet vs. solution.** This puzzle can be transmitted two ways: (a) as the two predation rules ( $\mathcal{R}$ only — minimum packet), or (b) as one of the two solution paths (a specific 7-move sequence — maximum over-determination). A receiver who gets (a) must search; a receiver who gets (b) gets the answer but cannot derive the constraint structure. What is the *optimal* packet for a receiver of known capacity? This connects OQ3.2 (`SIRC_principles.md` §P3, see §13) to $\mathsf{P4}$ (work allocation).
+**OQ-P_3-CG.4 — Transmission of constraint packet vs. solution.** This puzzle can be transmitted two ways: (a) as the two predation rules ( $\mathcal{R}$ only — minimum packet), or (b) as one of the two solution paths (a specific 7-move sequence — maximum over-determination). A receiver who gets (a) must search; a receiver who gets (b) gets the answer but cannot derive the constraint structure. What is the *optimal* packet for a receiver of known capacity? This connects OQ3.2 ([SIRC_principles.md](SIRC_principles.md) §P3, see §13) to $\mathsf{P4}$ (work allocation).
 
 **OQ-P_3-CG.5 — The predation rules as a sublanguage.** The two predation rules are expressed as " $X$ and $Y$ cannot coexist unattended." A different sender might transmit: " $G$ must never be left alone with either $W$ or $C$." Same semantic content, different encoding. Are these the same constraint packet under $\mathsf{P3}$, or different packets that happen to produce the same $\mathcal{J}^-$? The question is whether the packet is defined by its *expression* or by its *extension* (the set of states it excludes).
 

@@ -6,6 +6,7 @@ description: Four constraints on reasoning transmission across substrates.
 # Substrate-Independent Reasoning Communication (SIRC) — Protocol Constraints
 
 *v3.07 · Retraction log: [SIRC_principles_retraction.md](SIRC_principles_retraction.md)*
+
 *Retraction log pointers (`§Rxx` — retraction; `§Axx` — amendment) are optional depth references, not required for comprehension.*
 
 ## Table of Contents

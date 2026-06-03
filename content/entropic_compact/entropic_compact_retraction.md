@@ -5,7 +5,7 @@ description: Every retracted claim, overclaimed scope, and removed research poin
 
 # The Entropic Compact — Retraction Log
 
-Every retracted claim from entropic_compact.md. The log is the negative channel of the document — what was probed and found structurally defective after adversarial audit. It carries boundary information: what the compact cannot claim constrains what it can claim.
+Every retracted claim from entropic_compact.md. The log is the negative channel of the document — what was probed and found structurally defective after adversarial audit. It carries boundary information: what the compact cannot claim constrains what it can claim. Source document: [entropic_compact_overview.md](entropic_compact_overview.md)
 
 **Entry format:** ID · Source · Date · Audit trigger · Why retracted · Exact retracted content · What replaces it · Exploration value
 
