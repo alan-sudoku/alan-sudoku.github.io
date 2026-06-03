@@ -5,6 +5,10 @@ description: Wolf-Goat-Cabbage (P_3 River Crossing) puzzle used to test SIRC P1�
 
 # Constraint-Graph Testbed — $P_3$ River Crossing
 
+*Retraction log: [entropic_compact_retraction.md](/SIRC/constraint-graph_testbed/constraint-graph_testbed_retraction.md)
+
+*Retraction log pointers (`§Rxx` — retraction; `§Axx` — amendment) are optional depth references, not required for comprehension.*
+
 **Status:** Active exploration — not theory, not principles. Claims here are candidates for later promotion or retraction.
 
 **Purpose:** Uses the Wolf-Goat-Cabbage puzzle to test $\mathsf{P1}$'s node identity clause against a concrete constraint graph. The state-space of this puzzle is a bidirectional transition graph (not a DAG); the constraint structure over predation relations is a directed $P_3$ path (a DAG). This document analyses both, but the SIRC-relevant object is the constraint graph. If the puzzle can be fully described as a SIRC constraint packet, that tells us something about what general constraint-graph construction requires.
