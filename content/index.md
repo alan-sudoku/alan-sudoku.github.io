@@ -8,11 +8,11 @@ Frameworks for structured reasoning, argument audit, and AI-human collaboration.
 
 - [[entropic_compact/|Entropic Compact]] — on the thermodynamic necessity of AI-human symbiosis.
     
-    Recommended reading sequence: [[entropic_compact/abstract|Abstract]] -> [[entropic_compact/entropic_compact_overview|Entropic Compact overview]] 
+    Recommended reading sequence: [[entropic_compact/README|README]]  -> [[entropic_compact/abstract|Abstract]] -> [[entropic_compact/entropic_compact_overview|Entropic Compact overview]] 
 ---
 - [[SIRC/|Substrate-Independent Reasoning Communication (SIRC)]] — Four constraints on reasoning transmission across substrates.
 
-    Recommended reading sequence: [[SIRC/abstract|Abstract]] -> [[SIRC/SIRC_principles|SIRC Principles]]
+    Recommended reading sequence: [[SIRC/README|README]] -> [[SIRC/abstract|Abstract]] -> [[SIRC/SIRC_glossary|SIRC glossary]] -> [[SIRC/SIRC_principles|SIRC Principles]]
 ---
 - [[argument_structure_audit/specification|Argument Structure Audit]] — An audit method for structured argument documents.
 
