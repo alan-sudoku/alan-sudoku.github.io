@@ -44,4 +44,3 @@ MIT
 ## Related identifiers
 
 GitHub repository: https://github.com/alan-sudoku/SIRC
-Argument structure audit tools: https://github.com/alan-sudoku/argument_structure_audit
