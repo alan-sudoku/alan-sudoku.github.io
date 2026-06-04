@@ -63,9 +63,3 @@ jobs:
           git add content/
           git diff --cached --quiet || git commit -m "sync: content from source repos"
           git push
-
-      - name: Trigger deploy
-        run: |
-          gh workflow run deploy.yml
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
