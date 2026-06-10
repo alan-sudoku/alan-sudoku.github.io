@@ -5,9 +5,9 @@ description: Every retracted claim, overclaimed scope, and removed research poin
 
 # Constraint-Graph Testbed Series — Retraction Log
 
-Every retracted claim, overclaimed scope, and corrected assessment across the Constraint-Graph Testbed series. The log is the negative channel ( $C_- $) of the series — what was probed and found absent or misformulated. It carries boundary information: what the experiment series cannot claim constrains what it can claim.
+Every retracted claim, overclaimed scope, and corrected assessment across the Constraint-Graph Testbed series. The log is the negative boundary ( $C_- $) of the series — what was probed and found absent or misformulated. It carries boundary information: what the experiment series cannot claim constrains what it can claim.
 
-**Structural role (SIRC vocabulary):** The three (and planned four) Constraint-Graph Testbed documents are the positive channel ( $C_+ $) — the enumerated findings, conjectures, and structural comparisons that survived audit. This log is $C_-$ — the designed mutation record. Each entry is a claim that appeared to belong in the series but was shown to be non-invariant surface: a misidentification, a formulation that applied to the wrong encoding, or a conclusion downstream of a false premise. Shedding these is P2-governed behaviour, not failure. The series documents and this log together form a complete exploration record.
+**Structural role (SIRC vocabulary):** The three (and planned four) Constraint-Graph Testbed documents are the positive boundary ( $C_+ $) — the enumerated findings, conjectures, and structural comparisons that survived audit. This log is $C_-$ — the designed mutation record. Each entry is a claim that appeared to belong in the series but was shown to be non-invariant surface: a misidentification, a formulation that applied to the wrong encoding, or a conclusion downstream of a false premise. Shedding these is P2-governed behaviour, not failure. The series documents and this log together form a complete exploration record.
 
 **Scope:** This log covers all Constraint-Graph Testbed documents in `constraint-graph_testbed/`. It does not cover retractions to or `SIRC_principles.md` — those have their own retraction logs.
 

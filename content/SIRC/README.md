@@ -36,8 +36,8 @@ Four constraints on what a transmission must preserve to count as communication 
 
 Each document is one half of a $C_+$ / $C_-$ pair. The protocol described in $\mathsf{P2}$ applies to the documents themselves:
 
-- **Positive channel ( $C_+$)** — the principles document and each experiment document. The invariant content that survived audit.
-- **Negative channel ( $C_-$)** — the retraction log paired with it. What was probed and found non-invariant. Every shed claim is an entry; exploration value is recorded so the boundary information is recoverable.
+- **Positive boundary ( $C_+$)** — the principles document and each experiment document. The invariant content that survived audit.
+- **Negative boundary ( $C_-$)** — the retraction log paired with it. What was probed and found non-invariant. Every shed claim is an entry; exploration value is recorded so the boundary information is recoverable.
 
 Reading both halves is optional. Reading only the positive channel is reading a compressed result. Reading both is reading the full exploration record.
 
