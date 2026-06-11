@@ -54,6 +54,9 @@ jobs:
       - name: Build
         run: npx quartz build
 
+      - name: Copy root verification files
+        run: cp quartz/static/googleb6a0271f26cabe2d.html public/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
