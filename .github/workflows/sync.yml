@@ -35,6 +35,12 @@ jobs:
           repository: alan-sudoku/argument_structure_audit
           path: _source_asa
 
+      - name: Checkout geometric_sufficiency_hypothesis
+        uses: actions/checkout@v4
+        with:
+          repository: alan-sudoku/geometric_sufficiency_hypothesis
+          path: _source_gsh
+
       - name: Sync content
         run: |
           mkdir -p content/SIRC
@@ -55,6 +61,13 @@ jobs:
             --exclude='archived/' --exclude='tools/' \
             --exclude='.DS_Store' --exclude='.gitignore' \
             _source_asa/ content/argument_structure_audit/
+
+          mkdir -p content/gsh
+          rsync -av --delete \
+            --exclude='.github' --exclude='.git' --exclude='LICENSE' \
+            --exclude='archived/' --exclude='tools/' --exclude='local_docs/' --exclude='local_tools/' \
+            --exclude='.DS_Store' --exclude='.gitignore' \
+            _source_gsh/ content/gsh/
 
       - name: Commit and push
         run: |

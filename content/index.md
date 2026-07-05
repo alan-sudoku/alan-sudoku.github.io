@@ -12,7 +12,11 @@ Frameworks for structured reasoning, argument audit, and AI-human collaboration.
 - **[[SIRC/|Substrate-Independent Reasoning Communication (SIRC)]]** — Four constraints on reasoning transmission across substrates.
     - *Recommended sequence:* [[SIRC/abstract|Abstract]] → [[SIRC/README|README]] → [[SIRC/SIRC_glossary|SIRC glossary]] → [[SIRC/SIRC_principles|SIRC Principles]]
 >
+- **[[gsh/|Geometric Sufficiency Hypothesis]]** — Engineering hypothesis: any functional requirement set has a minimum-cardinality element set satisfiable through geometric arrangement.
+    - *Recommended sequence:* [[gsh/abstract|Abstract]] → [[gsh/README|README]] → [[gsh/geometric_sufficiency_hypothesis|Geometric Sufficiency Hypothesis]]
+>
 - **[[argument_structure_audit/specification|Argument Structure Audit]]** — An audit method for structured argument documents.
+
 
 ## Tools
 

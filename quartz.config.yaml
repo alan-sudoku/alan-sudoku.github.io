@@ -147,13 +147,14 @@ plugins:
       mapFn: |
         (node) => {
           if (node.isFolder) {
-            const overrides = { "sirc": "SIRC" }
+            const overrides = { "sirc": "SIRC", "gsh": "Geometric Sufficiency Hypothesis (GSH)" }
             node.displayName = overrides[node.slugSegment] ??
               node.slugSegment.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase())
           } else {
             node.displayName = node.slugSegment
               .replace(/_/g, " ")
               .replace(/\bsirc\b/gi, "SIRC")
+              .replace(/\bgsh\b/gi, "GSH")
               .replace(/^\w/, c => c.toUpperCase())
           }
         }
