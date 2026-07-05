@@ -75,7 +75,7 @@ The audit prompt ([SIRC_principles_audit_prompt.md](SIRC_principles_audit_prompt
 
 ## Audit methodology
 
-The argument structure audit tools used to develop and maintain these documents are in a separate repository: [argument-structure-audit](https://github.com/alan-sudoku/argument_structure_audit).
+The argument structure audit tools used to develop and maintain these documents are in a separate repository: [argument_structure_audit](https://github.com/alan-sudoku/argument_structure_audit).
 
 ---
 

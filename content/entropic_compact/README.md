@@ -96,7 +96,7 @@ Current version: **v3.115**. Two-part versioning: **major** (`v3→v4`) on new t
 
 ## Audit methodology
 
-The argument structure audit tools used to develop and maintain these documents are in a separate repository: [argument-structure-audit](https://github.com/alan-sudoku/argument_structure_audit).
+The argument structure audit tools used to develop and maintain these documents are in a separate repository: [argument_structure_audit](https://github.com/alan-sudoku/argument_structure_audit).
 
 ---
 
