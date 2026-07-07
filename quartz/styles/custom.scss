@@ -72,10 +72,6 @@ article strong {
 
 // ── Math display ──────────────────────────────────────────────────────────────
 .katex-display {
-  text-align: center;
-}
-
-// ── Mermaid dark mode ─────────────────────────────────────────────────────────
-:root[saved-theme="dark"] .mermaid svg {
-  filter: invert(0.85) hue-rotate(180deg);
+  text-align: center !important;
+  display: block !important;
 }
