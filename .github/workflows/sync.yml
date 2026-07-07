@@ -71,6 +71,8 @@ jobs:
 
       - name: Commit and push
         run: |
+          printf -- '---\ntitle: Substrate-Independent Reasoning Communication (SIRC)\n---\n' > content/SIRC/index.md
+          printf -- '---\ntitle: Geometric Sufficiency Hypothesis (GSH)\n---\n' > content/gsh/index.md
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add content/
