@@ -14,7 +14,7 @@ Frameworks for structured reasoning, argument audit, and AI-human collaboration.
 >
 - **[[gsh/|Geometric Sufficiency Hypothesis]]** — Engineering hypothesis: any functional requirement set has a minimum-cardinality element set satisfiable through geometric arrangement.
     - *Recommended sequence:* [[gsh/abstract|Abstract]] → [[gsh/README|README]] → [[gsh/geometric_sufficiency_hypothesis|Geometric Sufficiency Hypothesis]]
-    - Online python script viewer: [fe_crossover_numeric.py](https://molab.marimo.io/github/alan-sudoku/notebooks/blob/main/GSH/fe_crossover_numeric.py/server)
+    - Online python script viewer: [fe_crossover_numeric.py](https://alan-sudoku.github.io/notebooks/GSH/fe_crossover_numeric.html)
 >
 - **[[argument_structure_audit/specification|Argument Structure Audit]]** — An audit method for structured argument documents.
 
