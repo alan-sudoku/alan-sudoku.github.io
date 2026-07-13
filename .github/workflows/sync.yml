@@ -13,30 +13,30 @@ jobs:
 
     steps:
       - name: Checkout Pages repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout SIRC
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alan-sudoku/SIRC
           path: _source_sirc
 
       - name: Checkout entropic_compact
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alan-sudoku/entropic_compact
           path: _source_ec
 
       - name: Checkout argument_structure_audit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alan-sudoku/argument_structure_audit
           path: _source_asa
 
       - name: Checkout geometric_sufficiency_hypothesis
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alan-sudoku/geometric_sufficiency_hypothesis
           path: _source_gsh
