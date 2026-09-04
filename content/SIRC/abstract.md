@@ -27,7 +27,7 @@ $\mathsf{P3}$ (Constraint Packet) — a packet encodes the boundary conditions o
 
 $\mathsf{P4}$ (Work) — sender and receiver work are inversely coupled in the over-constrained regime. No general design choice minimises both simultaneously. The trade-off is asymmetric: sender compression increases receiver reconstruction cost; sender elaboration reduces it.
 
-The protocol is grounded in a constraint-graph experiment series using combinatorial puzzles (Wolf–Goat–Cabbage river crossing; forthcoming: Fox–Chicken–Caterpillar–Leaf; Tower of Hanoi) to make the $\mathsf{P1}$ node identity clause and $\mathsf{P3}$ fitness peak concrete and verifiable.
+The protocol is grounded in a constraint-graph experiment series using combinatorial puzzles (Wolf–Goat–Cabbage river crossing; Fox–Chicken–Caterpillar–Leaf river crossing; forthcoming: directed inference DAG testbeds) to make the $\mathsf{P1}$ node identity clause and $\mathsf{P3}$ fitness peak concrete and verifiable.
 
 ## Keywords
 

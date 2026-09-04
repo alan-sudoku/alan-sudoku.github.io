@@ -392,6 +392,8 @@ The structural observations in Part II suggest connections to SIRC principles. T
 
 **Scope note:** The P1 contact here is indirect. Path A and Path B are physical state sequences — they are not logical derivations and their edges do not represent entailment relations. The P1-relevant claim is narrower: the constraint packet $\mathcal{R}$ logically forces certain conclusions that are visible in both paths. Both paths are witnesses to the same set of forced conclusions, not derivations of each other.
 
+More precisely, the contact is indirect because $\mathsf{P1}$ requires a typed directed DAG — entailment relations ($\Gamma \vdash C$), operator types (AND, OR, NOT), directed consequence flow (`SIRC_principles.md` §P1 items 1–3: "the transmitted object is a typed DAG, not a bare topology"). River crossing predation rules are undirected symmetric pair-exclusion constraints with no premises, no conclusions, and no operators. The testbed models a constraint-satisfaction relaxation of $\mathsf{P1}$'s requirements. The $\mathcal{R}$-forced conclusions above are what this relaxation can establish. Whether they constitute $\mathsf{P1}$-proper findings depends on OQ1.4 (`SIRC_principles.md` §P1): if inferential role is defined by syntactic graph position rather than $(\Gamma, C)$ entailment pairs, these results would approach $\mathsf{P1}$-validity. Under the current canonical (directed-consequence) reading, they are constraint-satisfaction bounds on $\mathsf{P1}$'s requirements. *See `constraint-graph_testbed_retraction.md` §A1.*
+
 **The forced conclusions:** $\mathcal{R}$ — the two predation rules — logically entails:
 - A solution exists
 - The *Goat* must move first and last
@@ -407,9 +409,15 @@ Under a stricter definition requiring structural isomorphism, Path A and Path B 
 
 This matters for SIRC because a receiver who reconstructs Path A and a receiver who reconstructs Path B have produced structurally different outputs from the same constraint packet. If both are $\mathsf{P1}$-valid, then $\mathsf{P1}$ permits multiple valid reconstructions from a single constraint packet. If only one is $\mathsf{P1}$-valid, then $\mathsf{P1}$ implicitly requires structural isomorphism — and OQ1.1 is the question of when that requirement activates.
 
-**Falsification condition:** If $P_4$'s $\mathcal{R}$ does not force a unique bottleneck management sequence shared across all solution paths — i.e., some $P_4$ solution paths do not exhibit the same set of $\mathcal{R}$-forced conclusions as others — then the forced-conclusion invariant is an artefact of $P_3$'s single-bottleneck topology, not a structural property of path-graph puzzles, and this $\mathsf{P1}$ contact claim does not generalise.
+**Falsification condition (two criteria — co-extensive in $P_3$; tested separately at $P_4$):**
 
-**Promotion condition:** If all $P_4$ solution paths exhibit the same $\mathcal{R}$-forced conclusions — the same forced moves and the same bottleneck management requirements are present in every path — then the forced-conclusion invariant holds for multi-bottleneck path graphs and this claim is promoted from a single-data-point observation to a confirmed structural property.
+*Criterion A (sequence-structural):* If $P_4$'s $\mathcal{R}$ does not force a unique bottleneck management sequence shared across all solution paths, the sequence-level invariant is an artefact of $P_3$'s single-bottleneck topology.
+
+*Criterion B (conclusion-set invariance):* If some $P_4$ solution paths do not exhibit the same set of $\mathcal{R}$-forced conclusions as others, the path-invariant conclusion-set property does not generalise.
+
+In $P_3$, A and B are co-extensive: one bottleneck node forces exactly one sequence, which constitutes the entire forced conclusion set. The two criteria were not distinguished here because they had not been tested separately. *$P_4$ outcome (see `P_4_river_crossing.md` §9): Criterion A is falsified — $P_4$ paths use different pair orderings with no unique forced sequence. Criterion B holds as Candidate — both paths witness the same pair-membership conclusion set.*
+
+**Promotion condition (bifurcated at $P_4$):** Full promotion would require all $P_4$ solution paths to exhibit the same $\mathcal{R}$-forced conclusions in both senses: the same forced sequence (Criterion A) and the same conclusion-set invariant (Criterion B). *$P_4$ outcome: full promotion is not met. Criterion A failed — no shared sequence across paths. Criterion B holds partially — pair-membership constraints are path-invariant, recorded as Candidate. See `P_4_river_crossing.md` §9.*
 
 ---
 
@@ -550,7 +558,7 @@ Add one object to the chain: Fox–Chicken–Caterpillar–Leaf. The predation r
 | Solution paths $N_{paths}$ | $2$ | $2$ (at capacity $2$) |
 | Min. solution length $L_{\min}$ | $7$ | $3$ (at capacity $2$) |
 
-The $P_4$ case tests: do two bottleneck nodes create two forced sub-strategies, or does the constraint geometry produce a qualitatively different solution structure? The structural observation from §6.2 predicts more than two solution paths. The cultural universality prediction: if $P_4$ sits at its own fitness peak, independently invented $P_4$ puzzles should exist across cultures. Absence of cultural evidence suggests $P_4$ either degrades to trivial or exceeds the complexity threshold for oral transmission without written notation.
+The $P_4$ case tests: do two bottleneck nodes create two forced sub-strategies, or does the constraint geometry produce a qualitatively different solution structure? The structural observation from §6.2 predicts more than two solution paths. The cultural universality prediction: if $P_4$ sits at its own fitness peak *(reframed as irreducible constraint set at $N=4$; see `P_4_river_crossing.md` §10)*, independently invented $P_4$ puzzles should exist across cultures. Absence of cultural evidence suggests $P_4$ either degrades to trivial or exceeds the complexity threshold for oral transmission without written notation.
 
 #### §15.2 Tower of Hanoi — $P_n$ ordering constraint
 
@@ -570,7 +578,7 @@ Tower of Hanoi ($n$ disks, $3$ pegs) uses the same path topology as the river cr
 
 #### §15.3 What the extensions do not resolve
 
-$P_4$ state space enumeration is not done here. Tower of Hanoi is not a transportation puzzle — the constraint type does not transfer directly. Neither extension has been tested as a SIRC transmission. The cultural universality evidence provides indirect support; a direct test (transmit the $P_4$ or Hanoi constraint packet between two models and verify state space reconstruction) has not been run.
+$P_4$ state space enumeration is complete — the results tabulated in §15.1 have been verified by exhaustive BFS in `P_4_river_crossing.md` (constraint-graph testbed series). Tower of Hanoi is not a transportation puzzle — the constraint type does not transfer directly. Neither extension has been tested as a SIRC transmission. The cultural universality evidence provides indirect support; a direct test (transmit the $P_4$ or Hanoi constraint packet between two models and verify state space reconstruction) has not been run. The constraint-graph testbed series has reached its $\mathsf{P1}$ theoretical limit from transportation puzzles; the series limit note and graduation requirements are recorded in `P_4_river_crossing.md` §12.
 
 ---
 

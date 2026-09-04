@@ -13,6 +13,10 @@ Every retracted claim, overclaimed scope, and corrected assessment across the Co
 
 **Entry format:** ID · Source · Date · Trigger · Why retracted · Exact retracted content · What replaces it · Exploration value
 
+**Entry types:**
+- **§Rxx — retraction:** content removed or replaced because it was wrong. Use when a claim, scope, or pointer is false or indefensible.
+- **§Axx — amendment:** underlying direction correct; exposition was imprecise. Use when a precision addition closes an attack or resolves an ambiguity without retracting the direction.
+
 ---
 
 ## Index
@@ -23,6 +27,7 @@ Every retracted claim, overclaimed scope, and corrected assessment across the Co
 | [§R2](#r2) | M&C constraint structure is a hypergraph, framework extension required | Research assessment following R1 retraction | 2026-04-09 | Wikipedia graph-theoretic formulation; Alcuin number; conflict graph definition |
 | [§R3](#r3) | "No valid gap-filler found" conclusion | Derived from R1 + R2 | 2026-04-09 | Retraction of R2 — named encoding produces $C_6$, directly applicable |
 | [§R4](#r4) | "P1 work operates on the constraint graph" — constraint graph misidentified as P1 object | `P_3_river_crossing.md` — notation note | 2026-04-12 | Gemini audit rejoinder — "eats" edges are predation relations, not entailment relations |
+| [§A1](#a1) | §9 river crossing implicitly claims to test P1 proper — constraint-satisfaction relaxation scope not stated | `P_4_river_crossing.md` §9 (Part III) | 2026-09-03 | External adversarial audit + `SIRC_principles.md` §P1 items 1–3 verification |
 
 ---
 
@@ -153,6 +158,51 @@ The retraction produced a three-way separation that was absent before:
 | Entailment map | — | P1 | Logical consequence ( $\vdash$) |
 
 The series was operating as if separating two graphs resolved the P1 question. The retraction reveals that P1 requires a third object — the entailment map — which is not directly instantiated in these puzzles. P1 contact is therefore indirect in this series: accessible through $\mathcal{R}$-forced conclusions (§9) and constraint-packet role invariance (§12.3), but not through any graph whose edges are directly present in the documents. This is a more precise description of the P1 gap and defines what a true P1 testbed would need to provide: a puzzle whose solution structure is a branching logical deduction graph, not a state-transition search.
+
+---
+
+## §A1
+
+**Description:** §9 river crossing implicitly claims to test $\mathsf{P1}$ — constraint-satisfaction relaxation scope not stated
+**Source:** `P_4_river_crossing.md` §9 (Part III — SIRC connections)
+**Date:** 2026-09-03
+**Amendment trigger:** External adversarial audit of `P_4_river_crossing.md` + direct verification of `SIRC_principles.md` §P1 items 1–3
+
+### Why amended
+
+§9 connects $P_4$ structural observations to $\mathsf{P1}$ and $\mathsf{P3}$ without stating what kind of $\mathsf{P1}$ contact is possible. `SIRC_principles.md` §P1 (items 1–3) defines $\mathsf{P1}$-validity over a **typed directed DAG**: directed entailment relations ($\Gamma \vdash C$), operator types (AND, OR, NOT), and directed consequence flow — "the transmitted object is a typed DAG, not a bare topology."
+
+River crossing predation rules are undirected symmetric pair-exclusion constraints ($\{X, Y\} \not\subseteq B_\text{unattended}$): no premises, no conclusions, no operators, no directed flow. The testbed models a constraint-satisfaction relaxation of $\mathsf{P1}$'s requirements, not $\mathsf{P1}$ itself.
+
+This extends §R4. §R4 established the edge-type level: constraint graph edges are predation relations ("eats"), not entailment relations ($\vdash$), so "P1 work operates on the constraint graph" was a misidentification. §A1 establishes the testbed-scope level: not only are the edges wrong, but the entire undirected symmetric structure falls short of the typed directed DAG $\mathsf{P1}$ requires. Without an explicit scoping statement, §9 implied $\mathsf{P1}$-proper testing. The findings have different epistemic force depending on whether they are read as $\mathsf{P1}$-proper results or constraint-graph bounds on $\mathsf{P1}$'s requirements.
+
+### Imprecise exposition (before F29)
+
+§9 was structured as if river crossing tests $\mathsf{P1}$ directly:
+- The sequence falsification (F25) was framed as a $\mathsf{P1}$-invariant finding
+- The pair-membership Candidate (F25) was framed as a $\mathsf{P1}$ reformulation
+- The node identity failure (F16, §10.3) was framed as a $\mathsf{P1}$ result
+
+None of these acknowledged that the testbed is a constraint-satisfaction relaxation, not a $\mathsf{P1}$-proper instance.
+
+### What replaces it (F29 — committed 2026-09-03)
+
+A definition bridge paragraph inserted at the top of §9 in `P_4_river_crossing.md`, before `#### P1`:
+
+> **Testbed scope — §9 results are constraint-satisfaction bounds, not $\mathsf{P1}$ findings.** $\mathsf{P1}$ requires a typed directed DAG: entailment relations ($\Gamma \vdash C$), operator types (AND, OR, NOT), and directed consequence flow... The testbed models a constraint-satisfaction relaxation of $\mathsf{P1}$'s requirements, not $\mathsf{P1}$ itself. Results establish two types of finding: (a) failures identify what directed, typed structure is *necessary* for $\mathsf{P1}$; (b) successes are lower-bound Candidates until tested in a directed typed system. OQ1.4 is the unresolved resolution path (syntactic-position reading of inferential role). $\mathsf{P3}$ scope note: the §9 $\mathsf{P3}$ claim is a packet completeness question, not affected by the typed-DAG requirement.
+
+### Exploration value
+
+The amendment produces a precise taxonomy of what river crossing findings can and cannot claim with respect to $\mathsf{P1}$:
+
+| Finding type | Epistemic status after F29 |
+|---|---|
+| Properties that *fail* under undirected constraints | Necessary conditions for $\mathsf{P1}$ — directed/typed structure is required |
+| Properties that *hold* under undirected constraints | Lower-bound Candidates — not confirmed for $\mathsf{P1}$-proper instances |
+| OQ1.4 (syntactic-position reading) | Open resolution path — if adopted, narrows the gap between the testbed and $\mathsf{P1}$-proper |
+| $\mathsf{P3}$ claim (constraint-packet completeness) | Not affected — survives the typed-DAG critique independently |
+
+§R4 established what the constraint graph is (P3's object) and what it is not (P1's object). §A1 establishes what the testbed domain is (constraint-satisfaction relaxation) and what it is not ($\mathsf{P1}$-proper). Together, they define the full scope of the series' $\mathsf{P1}$ contact and what a true $\mathsf{P1}$ testbed would require: a puzzle whose solution structure is a branching typed logical deduction graph, not a state-transition reachability search over symmetric constraints.
 
 ---
 

@@ -54,6 +54,7 @@ Every retracted claim, overclaimed scope, and removed research pointer. The log 
 | [§A14](#a14) | §A11 overcorrected — "domain content is not encoded" is false; correct claim is domain content is not *required* (not § $\mathsf{P1}$invariant); sender may include domain guidance as optional Layer 2 content; this resolves the § $\mathsf{P1}$validity vs. communication gap | § $\mathsf{P3}$ opening definition; § $\mathsf{P3}$ Definition; § $\mathsf{P2}$ OQ2.1 | 2026-04-18 | Author self-correction — user-identified gap in §A11 logic |
 | [§A15](#a15) | $\mathsf{P4}$ omits cooperativity assumption for Layer 2 (soft guidance, not hard constraint; § $\mathsf{P1}$ permits discard) and phase transition regime restriction (inverse coupling holds over-constrained only; under-constrained coupling is direct) | § $\mathsf{P4}$ Definition; § $\mathsf{P4}$ OQ4.1 | 2026-04-18 | Pass 18 — Layer 2 Epistemic Contradiction / § $\mathsf{P1}$ Loophole; sub-arguments 2–3 partially hold |
 | [§A16](#a16) | $\mathsf{P1}$ Node Identity two-level distinction not explicit enough to foreclose distance-metric misreading of "topological position"; operator type equivalence not stated as functional/truth-table criterion | § $\mathsf{P1}$ Node Identity; § $\mathsf{P1}$ Definition item 3 | 2026-04-18 | Pass 20 — Topological Identity Contradiction; precision additions only |
+| [§A17](#a17) | Experimental programme forward-promised Hanoi/Latin square as next $\mathsf{P1}$ testbeds — both are undirected CSPs, structurally incompatible with $\mathsf{P1}$ directed entailment; replaced with directed inference DAGs | § Verification Asymmetry series description; progression table; `abstract.md` | 2026-09-04 | Series limit established in `P_4_river_crossing.md` §12 (F42) |
 
 ---
 
@@ -1096,3 +1097,34 @@ No structural claim in $\mathsf{P1}$ changes. The two-level distinction was alre
 ### Exploration value
 
 The explicit two-level explanation closes a class of "identity-topology deadlock" attacks by making the scope of each criterion precise. §A9's criterion answers one question (intra-graph node disambiguation); §A1's criterion answers a different question (cross-substrate reconstruction validity). An attacker can no longer claim the two criteria are in tension without engaging this distinction. Similarly, specifying operator type equivalence as functional/truth-table makes the invariant independently falsifiable at the substrate level: given two substrates, produce the input-output table for each operator implementation and check for match. Whether this is computationally tractable is OQ1.3; that it is well-defined is now explicit.
+
+---
+
+## §A17
+
+**Description:** Experimental programme description forward-promised Tower of Hanoi and Latin square as the next puzzle families for $\mathsf{P1}$ generalisation testing — both are undirected symmetric CSPs, structurally incompatible with $\mathsf{P1}$ directed entailment; replaced with directed inference DAGs
+**Source:** § Verification Asymmetry puzzle series description; progression table row; `abstract.md` line 30
+**Date:** 2026-09-04
+**Trigger:** Series limit established in `P_4_river_crossing.md` §12 (F42, committed 2026-09-03) and distilled into § Verification Asymmetry Empirical Calibration Note (F44)
+
+### Why addressed
+
+The F42 series limit note established that undirected symmetric CSPs cannot produce $\mathsf{P1}$ signal because $\mathsf{P1}$ requires a typed directed DAG (directed consequence flow, operator types, entailment relations $\Gamma \vdash C$). Tower of Hanoi and Latin squares share this structural disqualification: Hanoi's move constraints are symmetric (a disk can move from peg A to peg B or back); Latin square constraints are position-filling with no directed entailment structure. Neither family has premises, conclusions, or directed consequence flow.
+
+Three locations in the SIRC folder forward-promised these families as the generalisation step, implying they would provide $\mathsf{P1}$ signal. This was an error of omission in the original testbed planning — the series limit was not known until the $P_4$ testbed was completed and the $\mathsf{P1}$ mismatch identified.
+
+### What changed
+
+**`SIRC_principles.md` series description (line 55):** "Tower of Hanoi, Latin square" removed from the puzzle series list; replaced with "directed inference DAGs (required next testbed)"; forward pointer to Empirical Calibration Note added.
+
+**`SIRC_principles.md` progression table (line 62):** "Requires Tower of Hanoi, Latin square, DAG experiments" replaced with "Requires directed inference DAG testbeds (propositional resolution proofs, natural deduction trees, or typed logic circuits)."
+
+**`abstract.md` (line 30):** "forthcoming: Fox–Chicken–Caterpillar–Leaf; Tower of Hanoi" corrected — $P_4$ promoted from forthcoming to complete; Hanoi replaced with "forthcoming: directed inference DAG testbeds."
+
+### What this does not concede
+
+The experimental programme claim is unchanged: it remains the only verification path for synthesis claims. The progression table structure is unchanged. No $\mathsf{P1}$–$\mathsf{P4}$ definitions change. The amendment removes incorrect forward promises; it does not retract any completed finding.
+
+### Exploration value
+
+The structural disqualification of combinatorial CSPs (including Hanoi and Latin squares) as $\mathsf{P1}$ testbeds is a positive finding: it sharpens the required testbed class. Any puzzle or micro-world where the rules are undirected pair-exclusion or slot-filling constraints without premises, conclusions, or directed flow cannot be used as a $\mathsf{P1}$ testbed regardless of problem complexity. The required class is directed inference structures where nodes are propositions, edges are entailment relations, and operator types are explicitly typed (AND/OR/NOT or equivalent).

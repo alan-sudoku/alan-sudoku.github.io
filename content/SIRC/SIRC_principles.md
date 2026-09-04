@@ -52,17 +52,22 @@ The claims in this document fall into two epistemologically distinct categories.
 
 None of these produce a certificate. They produce *consensus*. Consensus among AI auditors has a specific failure mode: **correlated training data**. A reasoning error widespread enough in the pretraining corpus will survive cross-model audit because every auditor shares the same blind spot. Cross-model audit catches idiosyncratic errors; it cannot catch systemic ones.
 
-**The experimental programme is the only verification path for synthesis claims.** The puzzle series ( $P_3$, $P_4$ River Crossing, Tower of Hanoi, Latin square) is not illustration — it is the mechanism by which synthesis claims transition from audited-and-consistent to empirically grounded. The progression:
+**The experimental programme is the only verification path for synthesis claims.** The puzzle series — $P_3$/$P_4$ River Crossing (Series 0, complete; see Empirical Calibration Note below) and directed inference DAGs (required next testbed) — is not illustration: it is the mechanism by which synthesis claims transition from audited-and-consistent to empirically grounded. The progression:
 
 | Stage | Status | Verification mechanism |
 |---|---|---|
 | Enumerable puzzle values | Definitively proved | Verifier certificate (BFS + Z3 UNSAT) |
 | Ablation outcomes | Definitively proved | Verifier certificate — all rows enumerated |
 | Structural pattern within one puzzle family | Candidate | Consistent across $P_3$ and $P_4$ River Crossing enumeration |
-| Generalisation across puzzle families | Conjecture | Requires Tower of Hanoi, Latin square, DAG experiments |
+| Generalisation across puzzle families | Conjecture | Requires directed inference DAG testbeds (propositional resolution proofs, natural deduction trees, or typed logic circuits) |
 | Synthesis claims in §P1–P4 | Audited conjecture | Consistent under multi-model audit; no certificate available |
 
 A synthesis claim in § $\mathsf{P1}\text{–}\mathsf{P4}$ that survives audit but has no grounding in the experimental programme remains an audited conjecture. A synthesis claim that is confirmed by enumerable results across multiple puzzle families is an empirically supported claim — still not a formal proof, but stronger evidence than consensus alone.
+
+**Empirical Calibration Note (Testbed Series 0 — $P_3$/$P_4$ River Crossing).** The inaugural micro-world testbed series established two empirical baselines (source: `P_4_river_crossing.md` §9, §12):
+
+1. *Sequence vs. combinatorial invariance:* In multi-path constraint systems, step-by-step path order (sequence) is not invariant, but the object pairings mandated by $\mathcal{R}$ are preserved across all optimal paths — a Candidate invariant for OQ1.1.
+2. *Series limit:* Undirected symmetric CSPs cannot test directed entailment ($\mathsf{P1}$). Further empirical testing of $\mathsf{P1}$ requires directed inference DAGs (propositional resolution proofs, natural deduction trees, or typed logic circuits).
 
 **Self-referential note:** SIRC principles claims that reasoning transmission between substrates has the properties characterised in $\mathsf{P3}$ and $\mathsf{P4}$. The audit process that produced and maintains this document is itself a reasoning transmission between AI substrates. The document cannot escape its own scope condition: the audit loop is inside the system being described, not outside it. The puzzle experiments are the only part of the programme that operates outside this loop — the verifier produces results independently of what any AI substrate believes about them.
 
