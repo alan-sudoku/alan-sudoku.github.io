@@ -5,9 +5,9 @@ description: Every retracted claim, overclaimed scope, and removed research poin
 
 # SIRC Protocol Constraints — Retraction Log
 
-Every retracted claim, overclaimed scope, and removed research pointer. The log is the negative channel ( $C_-$) of the document — what was probed and found absent. It carries boundary information: what the constraints cannot claim constrains what they can claim.
+Every retracted claim, overclaimed scope, and removed research pointer. The log is the negative channel ( $\mathcal{B}_-$) of the document — what was probed and found absent. It carries boundary information: what the constraints cannot claim constrains what they can claim.
 
-**Structural role (SIRC vocabulary):** [SIRC_principles.md](SIRC_principles.md) is the positive channel ( $C_+$) — the invariant content that survived audit. This log is $C_-$ — the designed mutation record. Each entry is a claim that appeared to belong to $C_+$ (a foundational constraint) but was shown to be non-invariant surface: an overclaimed formalization, a loaded term, or a scope that could not be defended. Shedding these is $\mathsf{P2}$-governed behaviour, not failure. The two documents together form a complete transmission record.
+**Structural role (SIRC vocabulary):** [SIRC_principles.md](SIRC_principles.md) is the positive channel ( $\mathcal{B}_+$) — the invariant content that survived audit. This log is $\mathcal{B}_-$ — the designed mutation record. Each entry is a claim that appeared to belong to $\mathcal{B}_+$ (a foundational constraint) but was shown to be non-invariant surface: an overclaimed formalization, a loaded term, or a scope that could not be defended. Shedding these is $\mathsf{P2}$-governed behaviour, not failure. The two documents together form a complete transmission record.
 
 **Entry format:** ID · Source · Date · Audit trigger · Why retracted · Exact retracted content · What replaces it · Exploration value
 
@@ -23,38 +23,40 @@ Every retracted claim, overclaimed scope, and removed research pointer. The log 
 
 ## Index
 
-| ID | Description | Source | Date | Audit pass |
+| ID | Description | Source | Date | Audit trigger |
 |---|---|---|---|---|
-| [§R1](#r1) | DAG isomorphism mandated as $\mathsf{P1}$ invariant | § $\mathsf{P1}$ Definition item 2 | 2026-04-08 | Pass 1 — Gemini Rev 0 |
-| [§R2](#r2) | DPI scope implied to cover invariant | § $\mathsf{P2}$ Grounding | 2026-04-08 | Pass 1 — Gemini Rev 0 |
-| [§R3](#r3) | Braid scope constraint framed as topological only | § $\mathsf{P1}$ OQ1.1 pointer | 2026-04-08 | Pass 1 — Gemini Rev 0 |
-| [§R4](#r4) | AIT/MDL implied to ground constraint/content distinction | § $\mathsf{P3}$ Grounding | 2026-04-08 | Pass 1 — Gemini Rev 0 |
-| [§R5](#r5) | $\mathsf{P4}$ inverse coupling held unconditionally | § $\mathsf{P4}$ Definition | 2026-04-08 | Pass 1 — Gemini Rev 0 |
-| [§R6](#r6) | Braid group pointer retained after algebraic incompatibility named | § $\mathsf{P1}$ OQ1.1 pointer | 2026-04-08 | Pass 2 — Gemini Rev 1 |
-| [§R7](#r7) | Rate-Distortion Theory labeled as research pointer | § $\mathsf{P2}$ Grounding pointer | 2026-04-08 | Pass 2 — Gemini Rev 1 |
-| [§R8](#r8) | "Mathematically independent" language for $\mathsf{P1}$ / $\mathsf{P2}$ | Preamble pedagogical sequence | 2026-04-08 | Pass 3 — Gemini Rev 2 |
-| [§R9](#r9) | "Irreducible (engineering definition)" defense paragraph | Preamble | 2026-04-08 | Pass 3 — superseded by R10 |
-| [§R10](#r10) | "Irreducible Principles" title and language throughout | Title, headers, preamble | 2026-04-08 | Pass 4 — defensive restructure |
-| [§A1](#a1) | Node Identity ambiguity: "what entails it" read as edge-adjacency | § $\mathsf{P1}$ Node Identity | 2026-04-09 | Pass 5 — Gemini attack on entailment vs. isomorphism |
-| [§A2](#a2) | OQ3.1 success criterion framed as uniqueness; cardinality/geometry axes unnamed | § $\mathsf{P3}$ OQ3.1 research pointer | 2026-04-15 | Pass 8 — Infinite Grid attack on OQ3.1 draft |
-| [§A3](#a3) | Node Identity: labels readable as prohibited from use as reconstruction scaffolding | § $\mathsf{P1}$ Node Identity | 2026-04-15 | Pass 9 — Identity-Identifier Collapse attack |
-| [§A4](#a4) | Node Identity: proof-theoretic tradition not named; model-theoretic reading not closed | § $\mathsf{P1}$ Node Identity | 2026-04-15 | Pressure Point 1 — semantic/syntactic equivocation |
-| [§A5](#a5) | OQ1.2: positive and negative result conditions not specified | § $\mathsf{P1}$ OQ1.2 | 2026-04-15 | Pressure Point 3 — epistemic sharpening |
-| [§R11](#r11) | Algebraic Topology (Homology) named as formal parent for SET identities | § $\mathsf{P3}$ OQ3.2 research pointer | 2026-04-12 | Pass 6 — Gemini Rubik's/invertibility audit |
-| [§R12](#r12) | "Mathematical parent" label overclaims epistemic status — reads as formal SISC grounding in $S_n$ | § $\mathsf{P3}$ OQ3.2 research pointer | 2026-04-12 | Pass 7 — Gemini revision evaluation |
+| [§R1](#r1) | DAG isomorphism mandated as $\mathsf{P1}$ invariant | § $\mathsf{P1}$ Definition item 2 | 2026-04-08 | Initial audit |
+| [§R2](#r2) | DPI scope implied to cover invariant | § $\mathsf{P2}$ Grounding | 2026-04-08 | Initial audit |
+| [§R3](#r3) | Braid scope constraint framed as topological only | § $\mathsf{P1}$ OQ1.1 pointer | 2026-04-08 | Initial audit |
+| [§R4](#r4) | AIT/MDL implied to ground constraint/content distinction | § $\mathsf{P3}$ Grounding | 2026-04-08 | Initial audit |
+| [§R5](#r5) | $\mathsf{P4}$ inverse coupling held unconditionally | § $\mathsf{P4}$ Definition | 2026-04-08 | Initial audit |
+| [§R6](#r6) | Braid group pointer retained after algebraic incompatibility named | § $\mathsf{P1}$ OQ1.1 pointer | 2026-04-08 | Counter-audit round 1 |
+| [§R7](#r7) | Rate-Distortion Theory labeled as research pointer | § $\mathsf{P2}$ Grounding pointer | 2026-04-08 | Counter-audit round 1 |
+| [§R8](#r8) | "Mathematically independent" language for $\mathsf{P1}$ / $\mathsf{P2}$ | Preamble pedagogical sequence | 2026-04-08 | Counter-audit round 2 |
+| [§R9](#r9) | "Irreducible (engineering definition)" defense paragraph | Preamble | 2026-04-08 | Same audit; superseded by §R10 |
+| [§R10](#r10) | "Irreducible Principles" title and language throughout | Title, headers, preamble | 2026-04-08 | Author defensive restructure |
+| [§A1](#a1) | Node Identity ambiguity: "what entails it" read as edge-adjacency | § $\mathsf{P1}$ Node Identity | 2026-04-09 | Entailment vs. isomorphism attack |
+| [§A2](#a2) | OQ3.1 success criterion framed as uniqueness; cardinality/geometry axes unnamed | § $\mathsf{P3}$ OQ3.1 research pointer | 2026-04-15 | Infinite Grid attack on OQ3.1 draft |
+| [§A3](#a3) | Node Identity: labels readable as prohibited from use as reconstruction scaffolding | § $\mathsf{P1}$ Node Identity | 2026-04-15 | Identity-Identifier Collapse attack |
+| [§A4](#a4) | Node Identity: proof-theoretic tradition not named; model-theoretic reading not closed | § $\mathsf{P1}$ Node Identity | 2026-04-15 | Semantic/syntactic equivocation |
+| [§A5](#a5) | OQ1.2: positive and negative result conditions not specified | § $\mathsf{P1}$ OQ1.2 | 2026-04-15 | Epistemic sharpening |
+| [§R11](#r11) | Algebraic Topology (Homology) named as formal parent for SET identities | § $\mathsf{P3}$ OQ3.2 research pointer | 2026-04-12 | Rubik's/invertibility audit |
+| [§R12](#r12) | "Mathematical parent" label overclaims epistemic status — reads as formal SISC grounding in $S_n$ | § $\mathsf{P3}$ OQ3.2 research pointer | 2026-04-12 | Revision evaluation |
 | [§A6](#a6) | §A4 repair reversed — proof-theoretic tradition reference removed from Node Identity | § $\mathsf{P1}$ Node Identity | 2026-04-16 | Author revision — vocabulary R10 pattern applied |
 | [§R13](#r13) | "Semantic" removed from protocol name — SISC renamed SIRC | Title; all formal uses throughout document | 2026-04-16 | Author revision — § $\mathsf{P1}$ self-referential violation |
-| [§A7](#a7) | OQ3.1 cardinality/geometry framing carried implicit logic-class scope assumption | § $\mathsf{P3}$ OQ3.1 cardinality/geometry pointer | 2026-04-18 | Pass 10 — Gemini re-evaluation + independent analysis |
-| [§A8](#a8) | Node Identity: co-premise exception not stated; entailment map definition omits arity preservation | § $\mathsf{P1}$ Node Identity; § $\mathsf{P1}$ Definition item 1 | 2026-04-18 | Pass 11 — Arity Collapse attack on automorphism defence |
-| [§A9](#a9) | §A8 justification false: co-premise fix relied on graph topology, not pure entailment map; Node Identity restated as topological identity criterion | § $\mathsf{P1}$ Node Identity (§A8 repair) | 2026-04-18 | Pass 12 — Extensionality Trap + Syntax Smuggling |
-| [§A10](#a10) | "Vocabulary" in surface form clause ambiguous — logical operator types not named as invariant structural content; operator void exposes untyped graph cannot encode negation | § $\mathsf{P1}$ Definition item 3 (new); § $\mathsf{P1}$ Node Identity surface form clause | 2026-04-18 | Pass 13 — Operator Void + Tautological Collapse |
-| [§A11](#a11) | $\mathsf{P3}$ "boundary conditions of a thought" ambiguous — domain grounding not explicitly excluded; misreading invites Semantic Void attack | § $\mathsf{P3}$ opening definition sentence | 2026-04-18 | Pass 14 — Semantic Void; valid kernel of rejected critique |
-| [§A12](#a12) | Defense argument false: "structural role constraints rule out sourdough starter" — formal constraints cannot distinguish domain-isomorphic models; concession made explicit | Rejected critique record (Semantic Void); §A11 exploration value | 2026-04-18 | Pass 15 — Model-Theoretic Isomorphism attack |
-| [§A13](#a13) | $\mathsf{P4}$ Definition omits verification-cost dimension — inverse coupling correct for receiver search cost under targeted reconstruction; breaks when verification cost dominates (Pure Formalism / any-valid-instantiation case) | § $\mathsf{P4}$ Definition; § $\mathsf{P4}$ OQ4.1 | 2026-04-18 | Pass 17 — § $\mathsf{P4}$ Inversion Paradox / CSP Collapse; partial hold |
+| [§A7](#a7) | OQ3.1 cardinality/geometry framing carried implicit logic-class scope assumption | § $\mathsf{P3}$ OQ3.1 cardinality/geometry pointer | 2026-04-18 | Re-evaluation + independent analysis |
+| [§A8](#a8) | Node Identity: co-premise exception not stated; entailment map definition omits arity preservation | § $\mathsf{P1}$ Node Identity; § $\mathsf{P1}$ Definition item 1 | 2026-04-18 | Arity Collapse attack |
+| [§A9](#a9) | §A8 justification false: co-premise fix relied on graph topology, not pure entailment map; Node Identity restated as topological identity criterion | § $\mathsf{P1}$ Node Identity (§A8 repair) | 2026-04-18 | Extensionality Trap + Syntax Smuggling |
+| [§A10](#a10) | "Vocabulary" in surface form clause ambiguous — logical operator types not named as invariant structural content; operator void exposes untyped graph cannot encode negation | § $\mathsf{P1}$ Definition item 3 (new); § $\mathsf{P1}$ Node Identity surface form clause | 2026-04-18 | Operator Void + Tautological Collapse |
+| [§A11](#a11) | $\mathsf{P3}$ "boundary conditions of a thought" ambiguous — domain grounding not explicitly excluded; misreading invites Semantic Void attack | § $\mathsf{P3}$ opening definition sentence | 2026-04-18 | Semantic Void; valid kernel of rejected critique |
+| [§A12](#a12) | Defense argument false: "structural role constraints rule out sourdough starter" — formal constraints cannot distinguish domain-isomorphic models; concession made explicit | Rejected critique record (Semantic Void); §A11 exploration value | 2026-04-18 | Model-Theoretic Isomorphism attack |
+| [§A13](#a13) | $\mathsf{P4}$ Definition omits verification-cost dimension — inverse coupling correct for receiver search cost under targeted reconstruction; breaks when verification cost dominates (Pure Formalism / any-valid-instantiation case) | § $\mathsf{P4}$ Definition; § $\mathsf{P4}$ OQ4.1 | 2026-04-18 | §P4 Inversion Paradox / CSP Collapse; partial hold |
 | [§A14](#a14) | §A11 overcorrected — "domain content is not encoded" is false; correct claim is domain content is not *required* (not § $\mathsf{P1}$invariant); sender may include domain guidance as optional Layer 2 content; this resolves the § $\mathsf{P1}$validity vs. communication gap | § $\mathsf{P3}$ opening definition; § $\mathsf{P3}$ Definition; § $\mathsf{P2}$ OQ2.1 | 2026-04-18 | Author self-correction — user-identified gap in §A11 logic |
-| [§A15](#a15) | $\mathsf{P4}$ omits cooperativity assumption for Layer 2 (soft guidance, not hard constraint; § $\mathsf{P1}$ permits discard) and phase transition regime restriction (inverse coupling holds over-constrained only; under-constrained coupling is direct) | § $\mathsf{P4}$ Definition; § $\mathsf{P4}$ OQ4.1 | 2026-04-18 | Pass 18 — Layer 2 Epistemic Contradiction / § $\mathsf{P1}$ Loophole; sub-arguments 2–3 partially hold |
-| [§A16](#a16) | $\mathsf{P1}$ Node Identity two-level distinction not explicit enough to foreclose distance-metric misreading of "topological position"; operator type equivalence not stated as functional/truth-table criterion | § $\mathsf{P1}$ Node Identity; § $\mathsf{P1}$ Definition item 3 | 2026-04-18 | Pass 20 — Topological Identity Contradiction; precision additions only |
-| [§A17](#a17) | Experimental programme forward-promised Hanoi/Latin square as next $\mathsf{P1}$ testbeds — both are undirected CSPs, structurally incompatible with $\mathsf{P1}$ directed entailment; replaced with directed inference DAGs | § Verification Asymmetry series description; progression table; `abstract.md` | 2026-09-04 | Series limit established in `P_4_river_crossing.md` §12 (F42) |
+| [§A15](#a15) | $\mathsf{P4}$ omits cooperativity assumption for Layer 2 (soft guidance, not hard constraint; § $\mathsf{P1}$ permits discard) and phase transition regime restriction (inverse coupling holds over-constrained only; under-constrained coupling is direct) | § $\mathsf{P4}$ Definition; § $\mathsf{P4}$ OQ4.1 | 2026-04-18 | Layer 2 Epistemic Contradiction; sub-arguments 2–3 partially hold |
+| [§A16](#a16) | $\mathsf{P1}$ Node Identity two-level distinction not explicit enough to foreclose distance-metric misreading of "topological position"; operator type equivalence not stated as functional/truth-table criterion | § $\mathsf{P1}$ Node Identity; § $\mathsf{P1}$ Definition item 3 | 2026-04-18 | Topological Identity Contradiction; precision additions only |
+| [§A17](#a17) | Experimental programme forward-promised Hanoi/Latin square as next $\mathsf{P1}$ testbeds — both are undirected CSPs, structurally incompatible with $\mathsf{P1}$ directed entailment; replaced with directed inference DAGs | § Verification Asymmetry series description; progression table; `abstract.md` | 2026-09-04 | Series limit from P_4 testbed; directed DAG testbed required |
+| [§R14](#r14) | $C_\pm$ notation renamed $\mathcal{B}_\pm$ — collision with Shannon's canonical $C$ (channel capacity) | SIRC_glossary.md §Notation; SIRC_principles.md §P2, §P3; SIRC_principles_retraction.md header; README.md; constraint-graph_testbed_retraction.md | 2026-09-04 | §P2 grounding rewrite — Shannon formal grounding requires collision-free notation |
+| [§R15](#r15) | `*(O)*` Rate-Distortion argument retracted — "not a current grounding" claim contradicts elevation of RDT to co-primary grounding | SIRC_principles.md §P2 Grounding `*(O)*` sub-item | 2026-09-04 | §P2 grounding rewrite — keeping any fragment of the demotion after elevation creates adversarial self-citation |
 
 ---
 
@@ -63,7 +65,7 @@ Every retracted claim, overclaimed scope, and removed research pointer. The log 
 **Description:** DAG isomorphism mandated as $\mathsf{P1}$ invariant
 **Source:** § $\mathsf{P1}$ Definition, item 2
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 1 — Gemini Revision 0 audit
+**Retraction trigger:** Initial audit
 
 ### Why retracted
 
@@ -92,7 +94,7 @@ DAG isomorphism is the correct formalization candidate for the dependency struct
 **Description:** DPI scope implied to cover the $\mathsf{P1}$ invariant
 **Source:** § $\mathsf{P2}$ Grounding
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 1 — Gemini Revision 0 audit
+**Retraction trigger:** Initial audit
 
 ### Why retracted
 
@@ -123,7 +125,7 @@ The retraction correctly scoped the two arguments: DPI establishes the floor (fu
 **Description:** Braid scope constraint framed as topological observation without naming algebraic source
 **Source:** § $\mathsf{P1}$ OQ1.1 research pointer
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 1 — Gemini Revision 0 audit
+**Retraction trigger:** Initial audit
 **Note:** R3 was an intermediate repair. The pointer was subsequently removed entirely by R6. R3's contribution was naming the algebraic source, which confirmed the pointer was unretainable.
 
 ### Why retracted
@@ -142,7 +144,7 @@ An added sentence preceding the topological note:
 
 > `Algebraic constraint: braid groups are groups — every element has an inverse braid. Directed inference is irreversible: A ⊢ B does not imply B ⊢ A. This algebraic incompatibility is the source of the scope constraint below, not a topological coincidence.`
 
-**Subsequent finding (R6):** Naming the algebraic incompatibility revealed that the scope constraint does not salvage the pointer — linear inference chains are equally irreversible, and the pointer was removed entirely in Pass 2.
+**Subsequent finding (R6):** Naming the algebraic incompatibility revealed that the scope constraint does not salvage the pointer — linear inference chains are equally irreversible, and the pointer was removed entirely in the counter-audit round.
 
 ### Exploration value
 
@@ -155,7 +157,7 @@ R3's repair correctly named why braid groups fail. That naming was the necessary
 **Description:** AIT/MDL implied to ground the constraint/content distinction
 **Source:** § $\mathsf{P3}$ Grounding
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 1 — Gemini Revision 0 audit
+**Retraction trigger:** Initial audit
 
 ### Why retracted
 
@@ -186,7 +188,7 @@ The separation makes $\mathsf{P3}$'s grounding more robust: each field is only a
 **Description:** $\mathsf{P4}$ inverse coupling held unconditionally across all channel configurations
 **Source:** § $\mathsf{P4}$ Definition
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 1 — Gemini Revision 0 audit
+**Retraction trigger:** Initial audit
 
 ### Why retracted
 
@@ -217,7 +219,7 @@ Making the assumption explicit makes $\mathsf{P4}$ falsifiable within its scope:
 **Description:** Braid group pointer retained after algebraic incompatibility named
 **Source:** § $\mathsf{P1}$ OQ1.1 research pointer
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 2 — Gemini Revision 1 audit
+**Retraction trigger:** Counter-audit round 1
 
 ### Why retracted
 
@@ -244,7 +246,7 @@ The mathematical hierarchy note (Symmetric groups → braid groups → DAGs) was
 **Description:** Rate-Distortion Theory labeled as a current research pointer
 **Source:** § $\mathsf{P2}$ Grounding — Rate-Distortion pointer
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 2 — Gemini Revision 1 audit
+**Retraction trigger:** Counter-audit round 1
 
 ### Why retracted
 
@@ -271,7 +273,7 @@ The structural analogy is real and identifies the correct formalization target. 
 **Description:** "Mathematically independent" language for $\mathsf{P1}$ / $\mathsf{P2}$ coupling
 **Source:** Preamble — pedagogical sequence paragraph
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 3 — Gemini Revision 2 audit
+**Retraction trigger:** Counter-audit round 2
 
 ### Why retracted
 
@@ -296,7 +298,7 @@ The repair demonstrates the correct precision for independence claims in protoco
 **Description:** "Irreducible (engineering definition)" defense paragraph
 **Source:** Preamble
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 3 — Gemini Revision 2 — superseded by R10 in same pass
+**Retraction trigger:** Same audit as §R8; superseded by §R10
 
 ### Why retracted
 
@@ -323,7 +325,7 @@ R9 was the correct intermediate step — it identified what "irreducible" needed
 **Description:** "Irreducible Principles" title and language throughout
 **Source:** Title; "Principles at a Glance" header; "Each principle follows" preamble
 **Date:** 2026-04-08
-**Retraction trigger:** Pass 4 — author defensive restructure following Gemini Revision 2
+**Retraction trigger:** Author defensive restructure following counter-audit round 2
 
 ### Why retracted
 
@@ -355,60 +357,60 @@ The retraction demonstrates a general defensive principle: when a contested term
 
 ## Rejected critiques
 
-Gemini critiques assessed and rejected across all four audit passes. Recorded here as the $C_-$ of the audit process — what was probed, found invalid, and closed.
+Gemini critiques assessed and rejected across all four audit passes. Recorded here as the $\mathcal{B}_-$ of the audit process — what was probed, found invalid, and closed.
 
 | Critique | Source | Why rejected |
 |---|---|---|
-| $\mathsf{P1}$ is a tautology (classical logical equivalence) | Rev 1, Rev 2, Rev 3 | Novelty is in application to cross-substrate neural transmission, explicitly stated from the first line. Applying a known criterion to a domain where it was not previously operationalised is not trivial. |
-| $\mathsf{P2}$ is hollow / only an empirical observation | Rev 1, Rev 2, Rev 3 | $\mathsf{P2}$ is a design directive: do not attempt losslessness; target invariant preservation. A system designer ignoring $\mathsf{P2}$ would rationally attempt full-fidelity encoding. $\mathsf{P2}$ closes that path. |
-| $\mathsf{P1}$→$\mathsf{P2}$ logical derivation dependency | Rev 2 | Conflates application-level coupling with logical derivation. DPI is provable without any consequence relation. The consequence relation is provable without any information channel. Non-derivability and shared application vocabulary are compatible. |
-| Dead end as unified mathematical theory | Rev 0, Rev 1 | Applied only if method-level pointers are read as foundational claims. The document explicitly states originality is in the application, not the mathematics. |
-| Motte-and-Bailey fallacy | Rev 2 | Misclassified. Motte-and-Bailey requires strategic shifting between positions under pressure. The document's body stated the same position throughout. The valid kernel — title/body presentation gap — was addressed by R10 (term removal), not by shifting position. |
-| $\mathsf{P1}$ / $\mathsf{P2}$ are requirements not mechanics; document is top-heavy | Rev 3 | Fair typological observation about role differentiation; not a structural attack. $\mathsf{P1}$ and $\mathsf{P2}$ are prescriptive constraints that close off design alternatives (full fidelity, structural isomorphism), not merely descriptive requirements. Accepted as a documentation note, not a retraction trigger. |
-| Node Identity secretly forces isomorphism ("back door" attack) | Pass 5 | Conflates dependency path with inferential role. If $A \vdash B$ holds in both structures, $B$'s position in the entailment map is unchanged regardless of intermediate step $C$. Attack lands on a genuine ambiguity in exposition (C1); the underlying claim is correct. |
-| Inferential role is an unverifiable projection onto neural substrates | Pass 5 | This is OQ1.2, already open. The attack addresses a claim the document does not make. Principles define the invariant mathematically; extractability is deferred as an empirical question. |
-| $\mathsf{P3}$ forces the sender to provide intermediate steps (isomorphic structure) to be tractable | Pass 5 | Correct observation about the design space; misfires as a $\mathsf{P1}$ contradiction. This is $\mathsf{P4}$ operating correctly — the sender may choose a higher point on the trade-off curve, approaching fuller specification. That is a design choice, not a collapse of entailment equivalence. |
-| OQ1.1 (braid rejection for invertibility) and OQ3.2 (Symmetric Group $S_n$) are contradictory — the system rejects invertibility in one OQ and invokes an invertible structure in another | Pass 6 | Framework import. OQ1.1 and OQ3.2 are separate open questions exploring separate directions — the principles do not commit to a single algebraic parent across all OQs. The auditor imports the assumption that the theory must be globally consistent within one algebraic structure. OQ3.2's Sudoku pointer is an analogy (survival criterion 6: motivation, not mechanism grounding); treating it as a formal algebraic commitment is a misreading of epistemic status. The invertibility objection is valid against a formal commitment; it does not land against a motivating analogy. |
-| Repair: replace Symmetric Group $S_n$ with Semigroups or Monoids to model non-invertible directed operations | Pass 6 | Framework import (attack category: over-specification). Prescribes a specific algebraic structure where the principles currently point at an intuition. The correct action at OQ3.2 is to leave the open direction open, not to anchor it to a specific non-invertible algebraic parent. If Semigroups or Monoids are eventually validated as the correct formalization, that is a theory-level research outcome — not a principles-level commitment. |
-| $\mathsf{P1}$ and $\mathsf{P3}$ cannot coexist — boundary conditions cannot force unique reconstruction in open domains ("Infinite Grid") | Pass 8 | Imports a uniqueness requirement that neither $\mathsf{P1}$ nor $\mathsf{P3}$ makes. $\mathsf{P1}$ requires reconstruction to preserve the entailment map, not to be unique. $\mathsf{P3}$ requires the encoding type to be boundary conditions, not that those conditions force one solution. The § $\mathsf{P1}$equivalent set may contain multiple valid reconstructions; boundary conditions succeed if they constrain reconstruction to that set. Uniqueness is a special case at the fully over-determined end of the $\mathsf{P4}$ trade-off curve, not a general requirement. |
-| Bootstrap Paradox — "positions in the entailment map" presupposes a coordinate system the constraints are supposed to create (circular) | Pass 8 | Imports a Cartesian model (positions exist prior to objects) onto a relational model (positions are constituted by relations). $\mathsf{P1}$'s node identity is explicitly relational: a node's position in the entailment map is the set of entailment relations in which it participates. Transmitting a constraint $\Gamma \vdash C$ simultaneously specifies the required relation and partially identifies the nodes by their required inferential roles. Constraints and their referents are co-constituted. This is holistic, not circular — the same structure as relational definitions throughout graph theory and model theory. |
-| Infinite Basis Problem — optimization theory requires a fixed finite basis; open-domain reasoning has no finite variable set, so $\mathsf{P3}$'s feasible-set grounding is incoherent | Pass 8 | False premise. The requirement of a finite basis is specific to linear programming on finite-dimensional vector spaces, not to optimization theory generally. More importantly, $\mathsf{P3}$'s variable space is not "all propositions in the universe" but consequence relations over the sender's specific reasoning structure — a finite object. MDL's existence guarantee applies to this finite target. Optimization over infinite-dimensional spaces is a mature field; the attack mistakes a subfield constraint for a parent-theory requirement. |
-| Tautological Shield — OQ3.2 makes the protocol unfalsifiable: it works for receivers who can make it work | Pass 8 | Conflates validity condition with achievability condition. $\mathsf{P1}$ defines what a valid transmission is (entailment-map preservation) — this is the protocol's success criterion, independently defined. OQ3.2 asks what receiver capacity is required for that success to be achievable — a separate and open empirical question. The protocol is falsifiable: a transmission where the receiver's reconstruction does not preserve the entailment map is a $\mathsf{P1}$ failure, regardless of receiver capacity. OQ3.2 failure (insufficient capacity) and $\mathsf{P3}$ failure (wrong encoding type) are distinct failure modes, now explicitly named in the OQ3.1 cardinality-and-geometry research pointer. |
-| Identity-Identifier Collapse — "surface form" label designation means the receiver has no invariant identifier to link constraints during reconstruction | Pass 9 | Conflates two distinct functions of labels: (1) identity criterion — inferential role, not label (correct, $\mathsf{P1}$'s definition); (2) provisional coordination handle — labels can and do serve this function during reconstruction. $\mathsf{P1}$ prohibits treating label agreement as sufficient for identity; it does not prohibit using labels as reconstruction scaffolding. Final node identity is established by inferential role once the full entailment map is assembled. Nomenclature mismatch (same label, different inferential roles) is already a $\mathsf{P1}$ failure. Addressed by clarification in Node Identity section. |
-| Unknown N — receiver starts blank, so § $\mathsf{P3}$'s optimization has no defined variable space | Pass 9 | Assumes a blank receiver substrate; $\mathsf{P3}$ does not. $\mathsf{P3}$ states reconstruction occurs "from the receiver's own capacity." Constraint packets co-define their variable space through the constraints themselves (standard CSP — variables are introduced by rules, not by a pre-declared schema). The receiver's existing reasoning structure is the background space; transmitted constraints narrow what is produced within it. The blank-receiver premise is the attack's own, not a claim in the document. |
-| Ghost Constraint — separating § $\mathsf{P3}$ (encoding type) from OQ3.2 (capacity) makes § $\mathsf{P3}$ vacuous: any data is § $\mathsf{P3}$compliant | Pass 9 | Accurate description of $\mathsf{P3}$'s scope, not a new flaw. $\mathsf{P3}$'s Definition already states packets range from minimum sufficient to fully over-determined, and that below the minimum the receiver's search space is too large for reliable reconstruction. Sufficiency is OQ3.1's domain. $\mathsf{P3}$ defines encoding type; the four constraints together define the complete design space. Presenting the document's own stated scope as a newly exposed failure misreads the architecture. |
-| "Operationally Vacuous" meta-verdict — the protocol moved from logically non-feasible to formally vacuous: always correct, never necessarily working | Pass 8 summary | Meta-verdict rests entirely on the uniqueness-requirement premise already rejected in the same pass (Infinite Grid). $\mathsf{P3}$'s Definition explicitly states packets range from minimum sufficient to fully over-determined — the protocol's own text names the "never working" condition as below-minimum encoding, not as a structural feature. The verdict does not survive its own constituent attack rejections. |
+| $\mathsf{P1}$ is a tautology (classical logical equivalence) | Initial audit | Novelty is in application to cross-substrate neural transmission, explicitly stated from the first line. Applying a known criterion to a domain where it was not previously operationalised is not trivial. |
+| $\mathsf{P2}$ is hollow / only an empirical observation | Initial audit | $\mathsf{P2}$ is a design directive: do not attempt losslessness; target invariant preservation. A system designer ignoring $\mathsf{P2}$ would rationally attempt full-fidelity encoding. $\mathsf{P2}$ closes that path. |
+| $\mathsf{P1}$→$\mathsf{P2}$ logical derivation dependency | Initial audit | Conflates application-level coupling with logical derivation. DPI is provable without any consequence relation. The consequence relation is provable without any information channel. Non-derivability and shared application vocabulary are compatible. |
+| Dead end as unified mathematical theory | Initial audit | Applied only if method-level pointers are read as foundational claims. The document explicitly states originality is in the application, not the mathematics. |
+| Motte-and-Bailey fallacy | Initial audit | Misclassified. Motte-and-Bailey requires strategic shifting between positions under pressure. The document's body stated the same position throughout. The valid kernel — title/body presentation gap — was addressed by R10 (term removal), not by shifting position. |
+| $\mathsf{P1}$ / $\mathsf{P2}$ are requirements not mechanics; document is top-heavy | Initial audit | Fair typological observation about role differentiation; not a structural attack. $\mathsf{P1}$ and $\mathsf{P2}$ are prescriptive constraints that close off design alternatives (full fidelity, structural isomorphism), not merely descriptive requirements. Accepted as a documentation note, not a retraction trigger. |
+| Node Identity secretly forces isomorphism ("back door" attack) | Entailment vs. isomorphism attack | Conflates dependency path with inferential role. If $A \vdash B$ holds in both structures, $B$'s position in the entailment map is unchanged regardless of intermediate step $C$. Attack lands on a genuine ambiguity in exposition (C1); the underlying claim is correct. |
+| Inferential role is an unverifiable projection onto neural substrates | Entailment vs. isomorphism attack | This is OQ1.2, already open. The attack addresses a claim the document does not make. Principles define the invariant mathematically; extractability is deferred as an empirical question. |
+| $\mathsf{P3}$ forces the sender to provide intermediate steps (isomorphic structure) to be tractable | Entailment vs. isomorphism attack | Correct observation about the design space; misfires as a $\mathsf{P1}$ contradiction. This is $\mathsf{P4}$ operating correctly — the sender may choose a higher point on the trade-off curve, approaching fuller specification. That is a design choice, not a collapse of entailment equivalence. |
+| OQ1.1 (braid rejection for invertibility) and OQ3.2 (Symmetric Group $S_n$) are contradictory — the system rejects invertibility in one OQ and invokes an invertible structure in another | Rubik's/invertibility audit | Framework import. OQ1.1 and OQ3.2 are separate open questions exploring separate directions — the principles do not commit to a single algebraic parent across all OQs. The auditor imports the assumption that the theory must be globally consistent within one algebraic structure. OQ3.2's Sudoku pointer is an analogy (survival criterion 6: motivation, not mechanism grounding); treating it as a formal algebraic commitment is a misreading of epistemic status. The invertibility objection is valid against a formal commitment; it does not land against a motivating analogy. |
+| Repair: replace Symmetric Group $S_n$ with Semigroups or Monoids to model non-invertible directed operations | Rubik's/invertibility audit | Framework import (attack category: over-specification). Prescribes a specific algebraic structure where the principles currently point at an intuition. The correct action at OQ3.2 is to leave the open direction open, not to anchor it to a specific non-invertible algebraic parent. If Semigroups or Monoids are eventually validated as the correct formalization, that is a theory-level research outcome — not a principles-level commitment. |
+| $\mathsf{P1}$ and $\mathsf{P3}$ cannot coexist — boundary conditions cannot force unique reconstruction in open domains ("Infinite Grid") | Infinite Grid attack | Imports a uniqueness requirement that neither $\mathsf{P1}$ nor $\mathsf{P3}$ makes. $\mathsf{P1}$ requires reconstruction to preserve the entailment map, not to be unique. $\mathsf{P3}$ requires the encoding type to be boundary conditions, not that those conditions force one solution. The § $\mathsf{P1}$equivalent set may contain multiple valid reconstructions; boundary conditions succeed if they constrain reconstruction to that set. Uniqueness is a special case at the fully over-determined end of the $\mathsf{P4}$ trade-off curve, not a general requirement. |
+| Bootstrap Paradox — "positions in the entailment map" presupposes a coordinate system the constraints are supposed to create (circular) | Infinite Grid attack | Imports a Cartesian model (positions exist prior to objects) onto a relational model (positions are constituted by relations). $\mathsf{P1}$'s node identity is explicitly relational: a node's position in the entailment map is the set of entailment relations in which it participates. Transmitting a constraint $\Gamma \vdash C$ simultaneously specifies the required relation and partially identifies the nodes by their required inferential roles. Constraints and their referents are co-constituted. This is holistic, not circular — the same structure as relational definitions throughout graph theory and model theory. |
+| Infinite Basis Problem — optimization theory requires a fixed finite basis; open-domain reasoning has no finite variable set, so $\mathsf{P3}$'s feasible-set grounding is incoherent | Infinite Grid attack | False premise. The requirement of a finite basis is specific to linear programming on finite-dimensional vector spaces, not to optimization theory generally. More importantly, $\mathsf{P3}$'s variable space is not "all propositions in the universe" but consequence relations over the sender's specific reasoning structure — a finite object. MDL's existence guarantee applies to this finite target. Optimization over infinite-dimensional spaces is a mature field; the attack mistakes a subfield constraint for a parent-theory requirement. |
+| Tautological Shield — OQ3.2 makes the protocol unfalsifiable: it works for receivers who can make it work | Infinite Grid attack | Conflates validity condition with achievability condition. $\mathsf{P1}$ defines what a valid transmission is (entailment-map preservation) — this is the protocol's success criterion, independently defined. OQ3.2 asks what receiver capacity is required for that success to be achievable — a separate and open empirical question. The protocol is falsifiable: a transmission where the receiver's reconstruction does not preserve the entailment map is a $\mathsf{P1}$ failure, regardless of receiver capacity. OQ3.2 failure (insufficient capacity) and $\mathsf{P3}$ failure (wrong encoding type) are distinct failure modes, now explicitly named in the OQ3.1 cardinality-and-geometry research pointer. |
+| Identity-Identifier Collapse — "surface form" label designation means the receiver has no invariant identifier to link constraints during reconstruction | Identity-Identifier Collapse attack | Conflates two distinct functions of labels: (1) identity criterion — inferential role, not label (correct, $\mathsf{P1}$'s definition); (2) provisional coordination handle — labels can and do serve this function during reconstruction. $\mathsf{P1}$ prohibits treating label agreement as sufficient for identity; it does not prohibit using labels as reconstruction scaffolding. Final node identity is established by inferential role once the full entailment map is assembled. Nomenclature mismatch (same label, different inferential roles) is already a $\mathsf{P1}$ failure. Addressed by clarification in Node Identity section. |
+| Unknown N — receiver starts blank, so § $\mathsf{P3}$'s optimization has no defined variable space | Identity-Identifier Collapse attack | Assumes a blank receiver substrate; $\mathsf{P3}$ does not. $\mathsf{P3}$ states reconstruction occurs "from the receiver's own capacity." Constraint packets co-define their variable space through the constraints themselves (standard CSP — variables are introduced by rules, not by a pre-declared schema). The receiver's existing reasoning structure is the background space; transmitted constraints narrow what is produced within it. The blank-receiver premise is the attack's own, not a claim in the document. |
+| Ghost Constraint — separating § $\mathsf{P3}$ (encoding type) from OQ3.2 (capacity) makes § $\mathsf{P3}$ vacuous: any data is § $\mathsf{P3}$compliant | Identity-Identifier Collapse attack | Accurate description of $\mathsf{P3}$'s scope, not a new flaw. $\mathsf{P3}$'s Definition already states packets range from minimum sufficient to fully over-determined, and that below the minimum the receiver's search space is too large for reliable reconstruction. Sufficiency is OQ3.1's domain. $\mathsf{P3}$ defines encoding type; the four constraints together define the complete design space. Presenting the document's own stated scope as a newly exposed failure misreads the architecture. |
+| "Operationally Vacuous" meta-verdict — the protocol moved from logically non-feasible to formally vacuous: always correct, never necessarily working | Infinite Grid attack | Meta-verdict rests entirely on the uniqueness-requirement premise already rejected in the same pass (Infinite Grid). $\mathsf{P3}$'s Definition explicitly states packets range from minimum sufficient to fully over-determined — the protocol's own text names the "never working" condition as below-minimum encoding, not as a structural feature. The verdict does not survive its own constituent attack rejections. |
 | DPI and Kolmogorov Complexity laundered — DPI conflated with prescriptive mechanics; MDL conflated with constraint/content distinction | Gemini re-evaluation 2026-04-18, Point 1 | Defended. § $\mathsf{P2}$ explicitly decouples DPI from what is lost: "DPI establishes the existence of loss — the floor... The claim that invariant content is also at risk follows from substrate mismatch (OQ2.1), not from DPI directly." § $\mathsf{P3}$ explicitly separates AIT's existence proof from the constraint/content distinction, grounding the latter in Optimisation Theory. Both decouplings are stated in the document, not asserted post-attack. |
 | Incomputability and intractability — protocol mandates uncomputable operations (MDL, entailment equivalence verification) | Gemini re-evaluation 2026-04-18, Point 2 | Defended. The protocol does not mandate these as solved operational steps. OQ3.1 explicitly concedes MDL uncomputability: "the existence of such a minimum follows from MDL; the procedure for finding it does not." OQ1.3 explicitly leaves verification cost uncharacterised. Both are flagged as open questions, not claimed as solved. |
 | Entailment vs. structure equivocation — protocol reduces entailment to uninterpreted syntactic structure and graph isomorphism | Gemini re-evaluation 2026-04-18, Point 3 | Defended by design scope. The protocol explicitly bites the bullet: node identity is protocol-internal and does not invoke any tradition of semantics. The protocol transmits a formal system; whether that counts as "entailment" in a model-theoretic sense is outside $\mathsf{P1}$'s stated scope. Demanding model-theoretic grounding imports a requirement the document structurally disavows. |
 | Analogy scope and unfalsifiability — Phistomefel Ring imports finite group theory into general DAGs; $\mathsf{P3}$ vs OQ3.2 separation is a tautological shield; OQ1.2 uses moving goalposts | Gemini re-evaluation 2026-04-18, Point 5 | Defended. The Ring analogy is conditioned: "if reasoning DAGs have identifiable partition boundaries." OQ3.2 separation is standard Information Theory (existence of code vs. decoder complexity). OQ1.2 explicitly states what a negative result would mean — $\mathsf{P1}$ scope revision — which is a falsification condition, not a goalpost. All three sub-attacks misread epistemic-status labels as evasion. |
-| Disjunctive Collapse — two symmetric premises $\{A\} \vdash X$, $\{B\} \vdash X$ collapse to $\{N\} \vdash X$, destroying proof-path multiplicity | Pass 12 — Gemini §A8 counter-attack | Does not hold. § $\mathsf{P1}$'s iff is a universal quantifier over individual $(\Gamma,C)$ pairs; nodes with globally identical inferential roles ARE the same node in SIRC's extensional ontology. Valid kernel: proof-path multiplicity for inferential-role-identical nodes is not part of the § $\mathsf{P1}$ invariant. §A9 adds topological position to disambiguate symmetric nodes at transmission level. |
-| Tautological Collapse — "consequence relation" is graph reachability; logical vocabulary is superfluous; § $\mathsf{P1}$ reduces to graph isomorphism | Pass 13 — Gemini §A9 counter-attack | Does not hold once operator types are invariant (§A10). The tautology only applies to untyped graphs. A typed DAG has logical derivability as its consequence relation, not reachability — two typed graphs with identical topology but different operator assignments have different consequence relations. |
-| Operator Void — operators are "vocabulary" → surface form → stripped; SIRC cannot encode negation | Pass 13 — Gemini §A9 counter-attack | Precision gap; closed by §A10. "Vocabulary" was ambiguous; §A10 distinguishes non-logical vocabulary (surface form) from logical operator types (invariant structural content). → §A10. |
-| Semantic Void — stripping non-logical vocabulary produces an uninterpreted proof schema; any domain substitution satisfies § $\mathsf{P1}$; § $\mathsf{P4}$ inverse coupling violated | Pass 14 — Gemini §A10 counter-attack | Does not hold as structural attack; attacks design intent. Domain substitution is designed mutation (OQ2.1). § $\mathsf{P4}$ "violation" correctly describes the tradeoff. Valid kernel: §A11 precision on what § $\mathsf{P3}$ encodes; §A12 concession that structural constraints cannot distinguish domain-isomorphic models. → §A11, §A12. |
-| Shannon Entropy Failure / Zero-bit Semantic Payload — $I(\text{domain};\text{packet}) = 0$; the protocol transmits no domain-relevant information | Pass 16 — Gemini §A12 counter-attack | Does not hold; correctly describes scope but misidentifies it as failure. $I(\text{domain};\text{packet}) = 0$ is the designed behaviour — domain is surface form by definition. Imports blank-receiver premise (rejected, Unknown N). Valid kernel: OQ2.1 should name the shared-domain-context assumption explicitly. |
-| Topological Ontology Paradox — domain bounding via topology requires transmitting MDL(domain ontology) >> MDL(thought), violating § $\mathsf{P3}$; label-based $O(1)$ mechanism forbidden by §A10 | Pass 17 — Gemini §A12/§A11 counter-attack | Does not hold; forces a concession already made in §A12. The "Pure Formalism Path" demanded is the current protocol position. Valid kernel: $O(1)$ label vs. intractable topology complexity argument precisely explains why §A12's concession holds; added to §A12 exploration value. |
-| Teleological Smuggling / CSP Collapse — §A13's "targeted reconstruction" is out-of-band; CSP search space is $O(|V_\text{domain}|^{|V_\text{packet}|})$; § $\mathsf{P4}$ must be fully rewritten | Pass 18 — Gemini §A13 counter-attack | Does not hold as full retraction demand. Teleological attack neutralised by §A14 (Layer 2 brings domain guidance in-band). CSP attack uses naive enumeration, not constraint-propagation-effective cost; VF2-class propagation prunes additional constraints faster than it adds them. § $\mathsf{P4}$ Definition updated to specify constraint-propagation-pruned space. |
-| Layer 2 Epistemic Contradiction / § $\mathsf{P1}$ Loophole — Layer 2 is surface form → not a load-bearing boundary condition; § $\mathsf{P1}$ permits discard → Pure Formalism; § $\mathsf{P4}$ only holds above CSP phase transition | Pass 18 — Gemini §A14/§A13 counter-attack | Partially holds on two sub-arguments (§ $\mathsf{P1}$ loophole → cooperativity assumption required; phase transition → regime restriction required). Semantic smuggling sub-argument does not hold. → §A15. |
-| § $\mathsf{P4}$ Inversion Paradox / CSP Collapse — over-constrained packets require NP-complete subgraph isomorphism; more sender work increases receiver work; § $\mathsf{P4}$ coupling is backwards | Pass 17 — Gemini §A13 counter-attack | Partial hold. Correctly identifies verification cost as a dimension § $\mathsf{P4}$ omits; overclaims full rewrite. Inverse coupling holds for search cost under targeted reconstruction; verification cost (graph homomorphism) is directly coupled and dominates under Pure Formalism. → §A13. |
-| Satisfiability Paradox / Unprotected Boundary — over-constrained SIRC packets must be UNSAT (E[X]→0) by CSP phase transition theory; Layer 2 has no channel reliability requirement | Pass 19 — Gemini §A15 counter-attack | Satisfiability Paradox does not hold — applies random CSP theory to designed instances (category error); SIRC packets are over-constrained AND satisfiable (E[X]≈1); Sudoku 17-clue analogy applies. Unprotected Boundary is a precision extension — channel noise operationally equivalent to non-cooperative receiver; cooperativity assumption extended to cover both. → §A15. |
-| Isomorphism Collapse / Node Identity Vacancy / Equivocation — transitive closure trap; propositional set contradiction; symmetry erasure; logical vocabulary masks graph reachability | Pass 20 — Gemini §A10/§A9/§A1 structural teardown | Transitive Closure Trap: false premise — typed DAG consequence relation is logical derivability, not edge-set transitive closure (§A10). Propositional Set Contradiction: precision gap in quantifier domain, closed by explicit domain restriction in § $\mathsf{P1}$ Def item 1. Symmetry Erasure: Disjunctive Collapse redux — §A9 topological position distinguishes symmetric nodes. Equivocation: depends on 1 and 3, both false. → §A16. |
-| Topological Identity Contradiction — §A9 topological position and §A1 path-length flexibility are inconsistent; operator parity presupposes shared logical primitives | Pass 20 — Gemini §A9/§A1/§A10 consistency attack | Precision gaps identified; document did not yet explain why the two levels do not contradict. §A9 is intra-graph disambiguation (which transmitted node is which); §A1 is reconstruction validity (entailment-map position preserved by transitivity) — different levels, not in tension. Operator parity: verification hardness ≠ definitional incoherence (OQ1.3); operator labels name truth-table functions. → §A16. |
-| Entailment vs. Structure Equivocation — §A9/§A1 inconsistency re-run; transmitted object is uninterpreted proof skeleton; operator parity presupposes shared logic; verification gap requires DAG replication | Pass 21 — Gemini §A16/§A9/§A10 re-attack | Sub-arguments 1 and 4 do not hold (Pass 20 re-runs; §A16 closes both). Sub-argument 2 does not hold — accurately describes the protocol's design; whether logical-form transmission constitutes "thought transmission" is OQ5.1. Sub-argument 3 partially holds: "substrate-independent" requires operator-type-compatible substrates; named as Substrate scope condition in preamble. → OQ1.4, OQ5.1. |
+| Disjunctive Collapse — two symmetric premises $\{A\} \vdash X$, $\{B\} \vdash X$ collapse to $\{N\} \vdash X$, destroying proof-path multiplicity | Extensionality Trap + Syntax Smuggling (counter-attack on §A8) | Does not hold. § $\mathsf{P1}$'s iff is a universal quantifier over individual $(\Gamma,C)$ pairs; nodes with globally identical inferential roles ARE the same node in SIRC's extensional ontology. Valid kernel: proof-path multiplicity for inferential-role-identical nodes is not part of the § $\mathsf{P1}$ invariant. §A9 adds topological position to disambiguate symmetric nodes at transmission level. |
+| Tautological Collapse — "consequence relation" is graph reachability; logical vocabulary is superfluous; § $\mathsf{P1}$ reduces to graph isomorphism | Operator Void + Tautological Collapse (counter-attack on §A9) | Does not hold once operator types are invariant (§A10). The tautology only applies to untyped graphs. A typed DAG has logical derivability as its consequence relation, not reachability — two typed graphs with identical topology but different operator assignments have different consequence relations. |
+| Operator Void — operators are "vocabulary" → surface form → stripped; SIRC cannot encode negation | Operator Void + Tautological Collapse (counter-attack on §A9) | Precision gap; closed by §A10. "Vocabulary" was ambiguous; §A10 distinguishes non-logical vocabulary (surface form) from logical operator types (invariant structural content). → §A10. |
+| Semantic Void — stripping non-logical vocabulary produces an uninterpreted proof schema; any domain substitution satisfies § $\mathsf{P1}$; § $\mathsf{P4}$ inverse coupling violated | Semantic Void (counter-attack on §A10) | Does not hold as structural attack; attacks design intent. Domain substitution is designed mutation (OQ2.1). § $\mathsf{P4}$ "violation" correctly describes the tradeoff. Valid kernel: §A11 precision on what § $\mathsf{P3}$ encodes; §A12 concession that structural constraints cannot distinguish domain-isomorphic models. → §A11, §A12. |
+| Shannon Entropy Failure / Zero-bit Semantic Payload — $I(\text{domain};\text{packet}) = 0$; the protocol transmits no domain-relevant information | Shannon Entropy Failure (counter-attack on §A12) | Does not hold; correctly describes scope but misidentifies it as failure. $I(\text{domain};\text{packet}) = 0$ is the designed behaviour — domain is surface form by definition. Imports blank-receiver premise (rejected, Unknown N). Valid kernel: OQ2.1 should name the shared-domain-context assumption explicitly. |
+| Topological Ontology Paradox — domain bounding via topology requires transmitting MDL(domain ontology) >> MDL(thought), violating § $\mathsf{P3}$; label-based $O(1)$ mechanism forbidden by §A10 | Topological Ontology Paradox (counter-attack on §A12/§A11) | Does not hold; forces a concession already made in §A12. The "Pure Formalism Path" demanded is the current protocol position. Valid kernel: $O(1)$ label vs. intractable topology complexity argument precisely explains why §A12's concession holds; added to §A12 exploration value. |
+| Teleological Smuggling / CSP Collapse — §A13's "targeted reconstruction" is out-of-band; CSP search space is $O(|V_\text{domain}|^{|V_\text{packet}|})$; § $\mathsf{P4}$ must be fully rewritten | Teleological Smuggling / CSP Collapse (counter-attack on §A13) | Does not hold as full retraction demand. Teleological attack neutralised by §A14 (Layer 2 brings domain guidance in-band). CSP attack uses naive enumeration, not constraint-propagation-effective cost; VF2-class propagation prunes additional constraints faster than it adds them. § $\mathsf{P4}$ Definition updated to specify constraint-propagation-pruned space. |
+| Layer 2 Epistemic Contradiction / § $\mathsf{P1}$ Loophole — Layer 2 is surface form → not a load-bearing boundary condition; § $\mathsf{P1}$ permits discard → Pure Formalism; § $\mathsf{P4}$ only holds above CSP phase transition | Layer 2 Epistemic Contradiction (counter-attack on §A14/§A13) | Partially holds on two sub-arguments (§ $\mathsf{P1}$ loophole → cooperativity assumption required; phase transition → regime restriction required). Semantic smuggling sub-argument does not hold. → §A15. |
+| § $\mathsf{P4}$ Inversion Paradox / CSP Collapse — over-constrained packets require NP-complete subgraph isomorphism; more sender work increases receiver work; § $\mathsf{P4}$ coupling is backwards | §P4 Inversion Paradox (counter-attack on §A13) | Partial hold. Correctly identifies verification cost as a dimension § $\mathsf{P4}$ omits; overclaims full rewrite. Inverse coupling holds for search cost under targeted reconstruction; verification cost (graph homomorphism) is directly coupled and dominates under Pure Formalism. → §A13. |
+| Satisfiability Paradox / Unprotected Boundary — over-constrained SIRC packets must be UNSAT (E[X]→0) by CSP phase transition theory; Layer 2 has no channel reliability requirement | Satisfiability Paradox (counter-attack on §A15) | Satisfiability Paradox does not hold — applies random CSP theory to designed instances (category error); SIRC packets are over-constrained AND satisfiable (E[X]≈1); Sudoku 17-clue analogy applies. Unprotected Boundary is a precision extension — channel noise operationally equivalent to non-cooperative receiver; cooperativity assumption extended to cover both. → §A15. |
+| Isomorphism Collapse / Node Identity Vacancy / Equivocation — transitive closure trap; propositional set contradiction; symmetry erasure; logical vocabulary masks graph reachability | Isomorphism Collapse (structural teardown) | Transitive Closure Trap: false premise — typed DAG consequence relation is logical derivability, not edge-set transitive closure (§A10). Propositional Set Contradiction: precision gap in quantifier domain, closed by explicit domain restriction in § $\mathsf{P1}$ Def item 1. Symmetry Erasure: Disjunctive Collapse redux — §A9 topological position distinguishes symmetric nodes. Equivocation: depends on 1 and 3, both false. → §A16. |
+| Topological Identity Contradiction — §A9 topological position and §A1 path-length flexibility are inconsistent; operator parity presupposes shared logical primitives | Topological Identity Contradiction (consistency attack) | Precision gaps identified; document did not yet explain why the two levels do not contradict. §A9 is intra-graph disambiguation (which transmitted node is which); §A1 is reconstruction validity (entailment-map position preserved by transitivity) — different levels, not in tension. Operator parity: verification hardness ≠ definitional incoherence (OQ1.3); operator labels name truth-table functions. → §A16. |
+| Entailment vs. Structure Equivocation — §A9/§A1 inconsistency re-run; transmitted object is uninterpreted proof skeleton; operator parity presupposes shared logic; verification gap requires DAG replication | Entailment vs. Structure Equivocation (re-attack on §A16/§A9/§A10) | Sub-arguments 1 and 4 do not hold (Isomorphism Collapse re-runs; §A16 closes both). Sub-argument 2 does not hold — accurately describes the protocol's design; whether logical-form transmission constitutes "thought transmission" is OQ5.1. Sub-argument 3 partially holds: "substrate-independent" requires operator-type-compatible substrates; named as Substrate scope condition in preamble. → OQ1.4, OQ5.1. |
 
 ---
 
 ## Audit characterization record
 
-Precision additions made in Passes 8–9 are recorded here to prevent misreading of those additions as strategic repositioning in response to attacks. Three characterizations appearing in the Pass 9 final audit summary ("Logically Feasible / Formally Robust") are inaccurate and recorded as closed directions.
+Precision additions made in subsequent clarification rounds are recorded here to prevent misreading of those additions as strategic repositioning in response to attacks. Three characterizations appearing in the final audit summary ("Logically Feasible / Formally Robust") are inaccurate and recorded as closed directions.
 
 | Claim in final audit summary | Actual record | Why the characterization is wrong |
 |---|---|---|
-| "The document **pivoted** to Proof-Theoretic Semantics" | Pass 9 — precision addition: one sentence naming the philosophical tradition the document already occupied | The document always used inferential role as the identity criterion. The addition named the tradition; it did not change the stance. No attack caused repositioning. A pivot implies the prior state was different — it was not. |
-| "The target was **shifted** from Uniqueness to $\mathsf{P1}$-Equivalence" | Pass 8 — rejected critique (Infinite Grid): the uniqueness requirement was never in $\mathsf{P1}$ or $\mathsf{P3}$ | The uniqueness framing appeared in a draft OQ3.1 addition and was corrected before application. The document's core claim was always $\mathsf{P1}$-equivalence. The "shift" was a correction to draft language, not a change to any principle. |
-| "Reinventing the Wheel resolved by citing groundings (Shannon, Kolmogorov, Mac Lane, McGuire)" | Pass 1 — rejected critique: citations always present; defense was rejection, not document revision | No document change was made in response to the reinvention charge. Those citations existed before any audit pass. The defense is recorded in the rejected critiques table (Rev 0, Rev 1: "Dead end as unified mathematical theory — applies only if method-level pointers are read as foundational claims"). |
+| "The document **pivoted** to Proof-Theoretic Semantics" | Precision addition: one sentence naming the philosophical tradition the document already occupied | The document always used inferential role as the identity criterion. The addition named the tradition; it did not change the stance. No attack caused repositioning. A pivot implies the prior state was different — it was not. |
+| "The target was **shifted** from Uniqueness to $\mathsf{P1}$-Equivalence" | Infinite Grid rejected critique: the uniqueness requirement was never in $\mathsf{P1}$ or $\mathsf{P3}$ | The uniqueness framing appeared in a draft OQ3.1 addition and was corrected before application. The document's core claim was always $\mathsf{P1}$-equivalence. The "shift" was a correction to draft language, not a change to any principle. |
+| "Reinventing the Wheel resolved by citing groundings (Shannon, Kolmogorov, Mac Lane, McGuire)" | Initial audit rejected critique: citations always present; defense was rejection, not document revision | No document change was made in response to the reinvention charge. Those citations existed before any audit pass. The defense is recorded in the rejected critiques table (Initial audit: "Dead end as unified mathematical theory — applies only if method-level pointers are read as foundational claims"). |
 
-**Implication for future audit:** The $\mathsf{P1}\text{–}\mathsf{P4}$ statements are unchanged from Pass 4 onward. Passes 5–9 produced clarifications, precision additions, and pointer repairs — no structural changes to any principle. An auditor finding the Pass 9 final summary and treating it as the audit history will have a wrong model of the document's provenance. This record is the correction.
+**Implication for future audit:** The $\mathsf{P1}\text{–}\mathsf{P4}$ statements are unchanged from §R10 onward. Subsequent clarification rounds produced clarifications, precision additions, and pointer repairs — no structural changes to any principle. An auditor finding the final audit summary and treating it as the audit history will have a wrong model of the document's provenance. This record is the correction.
 
 ---
 
@@ -417,7 +419,7 @@ Precision additions made in Passes 8–9 are recorded here to prevent misreading
 **Description:** Node Identity ambiguity — "what entails it" readable as immediate predecessor in the DAG
 **Source:** § $\mathsf{P1}$ Node Identity
 **Date:** 2026-04-09
-**Trigger:** Pass 5 — Gemini attack on entailment equivalence vs. isomorphism
+**Trigger:** Entailment equivalence vs. isomorphism attack
 
 ### Why addressed
 
@@ -452,7 +454,7 @@ The clarification makes the entailment-equivalence vs. isomorphism distinction l
 **Description:** OQ3.1 success criterion framed as uniqueness; cardinality/geometry axes unnamed
 **Source:** § $\mathsf{P3}$ OQ3.1 first research pointer
 **Date:** 2026-04-15
-**Trigger:** Pass 8 — Gemini Infinite Grid attack on OQ3.1 draft
+**Trigger:** Infinite Grid attack on OQ3.1 draft
 
 ### Why addressed
 
@@ -477,11 +479,11 @@ Naming the two axes opens independently investigable research directions — car
 **Description:** Node Identity: labels readable as prohibited from use as reconstruction scaffolding
 **Source:** § $\mathsf{P1}$ Node Identity
 **Date:** 2026-04-15
-**Trigger:** Pass 9 — Identity-Identifier Collapse attack
+**Trigger:** Identity-Identifier Collapse attack
 
 ### Why addressed
 
-The phrases "label is surface form" and "label agreement is not sufficient" could be read as prohibiting labels from serving as coordination handles during reconstruction. The Pass 9 attack exploited this reading: if labels cannot be used to link constraints during assembly, the receiver has no basis for joining $\{Node\_A\} \vdash Node\_B$ with $\{Node\_B\} \vdash Node\_C$, making reconstruction operationally impossible. The underlying claim was correct throughout — labels are not the identity criterion — but the exposition permitted the misreading.
+The phrases "label is surface form" and "label agreement is not sufficient" could be read as prohibiting labels from serving as coordination handles during reconstruction. The Identity-Identifier Collapse attack exploited this reading: if labels cannot be used to link constraints during assembly, the receiver has no basis for joining $\{Node\_A\} \vdash Node\_B$ with $\{Node\_B\} \vdash Node\_C$, making reconstruction operationally impossible. The underlying claim was correct throughout — labels are not the identity criterion — but the exposition permitted the misreading.
 
 This is a clarification, not a retraction. The prohibition is on treating label agreement as sufficient for identity, not on using labels as scaffolding. These are distinct functions and the text now names them as such.
 
@@ -502,7 +504,7 @@ Makes the two functions of labels explicit and independently attackable: (1) ide
 **Description:** Node Identity: proof-theoretic tradition not named; model-theoretic reading not closed
 **Source:** § $\mathsf{P1}$ Node Identity
 **Date:** 2026-04-15
-**Trigger:** Pressure Point 1 — semantic/syntactic equivocation attack
+**Trigger:** Semantic/syntactic equivocation attack
 
 ### Why addressed
 
@@ -527,7 +529,7 @@ Permanently closes the semantic/syntactic equivocation attack by naming the phil
 **Description:** OQ1.2: positive and negative result conditions not specified
 **Source:** § $\mathsf{P1}$ OQ1.2
 **Date:** 2026-04-15
-**Trigger:** Pressure Point 3 — epistemic sharpening
+**Trigger:** Epistemic sharpening
 
 ### Why addressed
 
@@ -595,7 +597,7 @@ The §A4→§A6 sequence demonstrates the R10 pattern applied to a repair, not o
 **Description:** Algebraic Topology (Homology) named as the formal parent for SET identities
 **Source:** § $\mathsf{P3}$ OQ3.2 research pointer
 **Date:** 2026-04-12
-**Retraction trigger:** Pass 6 — Gemini audit on Rubik's Cube / invertibility (topology vs. combinatorics finding)
+**Retraction trigger:** Rubik's Cube / invertibility audit (topology vs. combinatorics)
 
 ### Why retracted
 
@@ -622,7 +624,7 @@ The retraction closes a potential confusion between two uses of "conservation": 
 **Description:** "Mathematical parent" label overclaims epistemic status in OQ3.2
 **Source:** § $\mathsf{P3}$ OQ3.2 research pointer
 **Date:** 2026-04-12
-**Retraction trigger:** Pass 7 — Gemini revision evaluation audit
+**Retraction trigger:** Revision evaluation audit
 
 ### Why retracted
 
@@ -707,7 +709,7 @@ The rename demonstrates the R10 pattern at protocol-name level: the most load-be
 **Description:** OQ3.1 cardinality/geometry framing carried implicit logic-class scope assumption
 **Source:** § $\mathsf{P3}$ OQ3.1 cardinality/geometry research pointer
 **Date:** 2026-04-18
-**Trigger:** Pass 10 — Gemini re-evaluation 2026-04-18 + independent analysis (dilemma declaration and logic-class restriction)
+**Trigger:** Re-evaluation 2026-04-18 + independent analysis
 
 ### Why addressed
 
@@ -728,7 +730,7 @@ Separates two previously conflatable failure modes: geometric underdetermination
 **Description:** Node Identity: co-premise exception not stated; entailment map definition omits arity preservation
 **Source:** § $\mathsf{P1}$ Node Identity; § $\mathsf{P1}$ Definition item 1
 **Date:** 2026-04-18
-**Trigger:** Pass 11 — Arity Collapse attack (Gemini counter-attack on automorphism defence)
+**Trigger:** Arity Collapse attack (counter-attack on automorphism defence)
 
 ### Why addressed
 
@@ -774,13 +776,13 @@ An attack on non-co-premise collapse now targets a different claim from an attac
 **Description:** §A8 justification false: co-premise fix relied on graph topology, not pure entailment map; Node Identity restated as topological identity criterion
 **Source:** § $\mathsf{P1}$ Node Identity (§A8 repair)
 **Date:** 2026-04-18
-**Trigger:** Pass 12 — Extensionality Trap + Syntax Smuggling (Gemini counter-attack on §A8)
+**Trigger:** Extensionality Trap + Syntax Smuggling (counter-attack on §A8)
 
 ### Why addressed
 
 §A8's "What this does not concede" contained a false claim: *"Co-premiership IS derived from the entailment map. Gemini's Option 1 framing ('arbitrary syntactic scaffolding not derived from the entailment map') does not apply."*
 
-Pass 12 demonstrated this is wrong on two counts:
+The Extensionality Trap + Syntax Smuggling counter-attack demonstrated this is wrong on two counts:
 
 **Extensionality Trap:** §A8 retained standard set theory for premise sets. Under the Axiom of Extensionality, $|\{P,Q\}| = 2$ iff $P \neq Q$. Whether $P \neq Q$ is precisely what node identity is trying to determine. The patch therefore presupposed the answer it was trying to establish — a definitional circle. The co-premise exception cannot be evaluated without prior knowledge of whether the nodes are already distinct, which is the question the exception was supposed to answer.
 
@@ -818,7 +820,7 @@ Separating these two levels closes the automorphism attacks without requiring la
 **Description:** "Vocabulary" in surface form clause ambiguous — logical operator types not named as invariant structural content; operator void exposes untyped graph cannot encode negation
 **Source:** § $\mathsf{P1}$ Definition (new item 3); § $\mathsf{P1}$ Node Identity surface form clause; "Everything else" surface form line
 **Date:** 2026-04-18
-**Trigger:** Pass 13 — Operator Void + Tautological Collapse (Gemini counter-attack on §A9)
+**Trigger:** Operator Void + Tautological Collapse (counter-attack on §A9)
 
 ### Why addressed
 
@@ -865,7 +867,7 @@ This partition is the correct design target for cross-substrate transmission: wh
 **Description:** $\mathsf{P3}$ "boundary conditions of a thought" ambiguous — domain grounding not explicitly excluded; misreading invites Semantic Void attack
 **Source:** § $\mathsf{P3}$ opening definition sentence
 **Date:** 2026-04-18
-**Trigger:** Pass 14 — valid kernel of Semantic Void rejected critique
+**Trigger:** Valid kernel of Semantic Void rejected critique
 
 ### Why addressed
 
@@ -896,11 +898,11 @@ The addition makes the § $\mathsf{P3}$/OQ2.1 relationship explicit at the § $\
 **Description:** Defense argument false: "structural role constraints rule out sourdough starter" — formal constraints cannot distinguish domain-isomorphic models; formal concession made explicit
 **Source:** Semantic Void rejected critique record; §A11 exploration value
 **Date:** 2026-04-18
-**Trigger:** Pass 15 — Model-Theoretic Isomorphism attack (Gemini counter-attack on Semantic Void defense)
+**Trigger:** Model-Theoretic Isomorphism attack (counter-attack on Semantic Void defense)
 
 ### Why addressed
 
-The Semantic Void rejected critique (Pass 14) contained a false sub-claim in the defense argument: *"structural role constraints… do domain-bounding work… structural constraints rule [sourdough starter] out even without labeling the domain."* The §A11 exploration value also contained the imprecise phrase "domain-bounding work."
+The Semantic Void rejected critique contained a false sub-claim in the defense argument: *"structural role constraints… do domain-bounding work… structural constraints rule [sourdough starter] out even without labeling the domain."* The §A11 exploration value also contained the imprecise phrase "domain-bounding work."
 
 The Model-Theoretic Isomorphism attack demonstrated this is formally false. Under §A10/§A11, the transmitted packet contains only graph topology and logical operator types. All non-logical vocabulary is stripped. The "structural role constraints" are therefore uninterpreted predicates ( $P_1, P_2, P_3$). By the fundamental theorems of formal logic, a purely formal system cannot distinguish between isomorphic models: if a bijective mapping exists from "hero's journey" predicates to "sourdough fermentation" predicates that preserves all logical relations, the sourdough model is a valid model of the formal system. The structural constraints cannot rule it out.
 
@@ -930,7 +932,7 @@ The model-theoretic isomorphism argument precisely states what SIRC does and doe
 
 This precision is useful for future scope claims about the protocol: any claim that SIRC transmits "domain-specific reasoning" is false. Any claim that SIRC transmits "the logical form of domain-specific reasoning" is true. OQ2.1's designed mutation principle is not an incidental example; it is a direct consequence of this formal property. The designed mutation is exactly model-theoretic isomorphism operating as intended.
 
-**Why topological domain bounding is not available (complexity argument — Pass 17 precision):** The only mechanism for domain bounding available within a §A10-compliant packet is unlabeled topology. Domain bounding via a non-logical vocabulary label (e.g., "Economics") is $O(1)$ sender cost and directly bounds the receiver's search to one domain. Domain bounding via unlabeled topology requires transmitting a topological subgraph that is isomorphic to the target domain but not to any isomorphic competitor domain — effectively the uninterpreted axiomatic ontology of the domain. Since local reasoning structures (Modus Ponens, causal chains, syllogisms) are highly isomorphic across domains, no small topological addition achieves this; the constraint packet size scales with MDL(domain ontology), not MDL(thought). This violates $\mathsf{P3}$'s premise that packet size should scale with the complexity of the transmitted reasoning structure. The formal consequence: within a $\mathsf{P3}$-compliant §A10 packet, domain bounding is not merely high-cost sender work on the $\mathsf{P4}$ curve — it is intractable in principle and $\mathsf{P3}$-violating in the general case. This is the formal reason the §A12 concession holds: domain is surface form not because of a design preference, but because including the mechanism to bound it would violate $\mathsf{P3}$ by making packet size domain-complexity-dependent rather than thought-complexity-dependent.
+**Why topological domain bounding is not available (complexity argument — §A12 precision):** The only mechanism for domain bounding available within a §A10-compliant packet is unlabeled topology. Domain bounding via a non-logical vocabulary label (e.g., "Economics") is $O(1)$ sender cost and directly bounds the receiver's search to one domain. Domain bounding via unlabeled topology requires transmitting a topological subgraph that is isomorphic to the target domain but not to any isomorphic competitor domain — effectively the uninterpreted axiomatic ontology of the domain. Since local reasoning structures (Modus Ponens, causal chains, syllogisms) are highly isomorphic across domains, no small topological addition achieves this; the constraint packet size scales with MDL(domain ontology), not MDL(thought). This violates $\mathsf{P3}$'s premise that packet size should scale with the complexity of the transmitted reasoning structure. The formal consequence: within a $\mathsf{P3}$-compliant §A10 packet, domain bounding is not merely high-cost sender work on the $\mathsf{P4}$ curve — it is intractable in principle and $\mathsf{P3}$-violating in the general case. This is the formal reason the §A12 concession holds: domain is surface form not because of a design preference, but because including the mechanism to bound it would violate $\mathsf{P3}$ by making packet size domain-complexity-dependent rather than thought-complexity-dependent.
 
 ---
 
@@ -939,7 +941,7 @@ This precision is useful for future scope claims about the protocol: any claim t
 **Description:** $\mathsf{P4}$ Definition omits verification-cost dimension — inverse coupling correct for receiver search cost under targeted reconstruction; breaks when verification cost dominates (Pure Formalism / any-valid-instantiation case)
 **Source:** § $\mathsf{P4}$ Definition; § $\mathsf{P4}$ OQ4.1
 **Date:** 2026-04-18
-**Trigger:** Pass 17 — § $\mathsf{P4}$ Inversion Paradox / CSP Collapse (Gemini counter-attack); partial hold
+**Trigger:** §P4 Inversion Paradox / CSP Collapse (counter-attack); partial hold
 
 ### Why addressed
 
@@ -951,7 +953,7 @@ What $\mathsf{P4}$ omits is a second dimension: **verification cost** — the co
 
 The CSP framing in the attack is formally correct for the "find any valid solution" problem: under-constrained systems have high solution density so finding any valid solution is trivial ( $O(1)$ in the limit); adding constraints pushes toward the SAT phase transition where finding any valid solution becomes NP-hard. The OQ4.1 phase transition pointer — the protocol's own citation — confirms this: more constraints drives the receiver toward the intractable regime for any-valid-solution search. The attack correctly turns this citation against the principle.
 
-This is a precision addition to $\mathsf{P4}$, not a retraction of its inverse coupling claim. The claim holds for search cost under targeted reconstruction, which is $\mathsf{P4}$'s design use case. The addition names the second dimension and the break condition. **§A14 note:** "targeted reconstruction with domain priors" as written here is underspecified — the protocol-internal mechanism enabling targeted reconstruction is Layer 2 domain guidance (§A14). The receiver does not select a target domain from out-of-band context; the sender includes domain guidance in the packet, and the receiver follows it. §A13's "domain priors" language was correct that the receiver has priors, but the targeting mechanism is Layer 2, not unprompted prior inference. This precision is required to resist the Teleological Smuggling attack (Pass 18, rejected critiques table).
+This is a precision addition to $\mathsf{P4}$, not a retraction of its inverse coupling claim. The claim holds for search cost under targeted reconstruction, which is $\mathsf{P4}$'s design use case. The addition names the second dimension and the break condition. **§A14 note:** "targeted reconstruction with domain priors" as written here is underspecified — the protocol-internal mechanism enabling targeted reconstruction is Layer 2 domain guidance (§A14). The receiver does not select a target domain from out-of-band context; the sender includes domain guidance in the packet, and the receiver follows it. §A13's "domain priors" language was correct that the receiver has priors, but the targeting mechanism is Layer 2, not unprompted prior inference. This precision is required to resist the Teleological Smuggling attack (see rejected critiques table).
 
 ### What changed
 
@@ -1031,7 +1033,7 @@ The Layer 1 / Layer 2 distinction resolves the § $\mathsf{P1}$validity vs. comm
 **Description:** $\mathsf{P4}$ omits cooperativity assumption for Layer 2 (soft guidance, not hard constraint; § $\mathsf{P1}$ permits discard) and phase transition regime restriction (inverse coupling holds over-constrained only; under-constrained coupling is direct)
 **Source:** § $\mathsf{P4}$ Definition; § $\mathsf{P4}$ OQ4.1
 **Date:** 2026-04-18
-**Trigger:** Pass 18 — Layer 2 Epistemic Contradiction / § $\mathsf{P1}$ Loophole (Gemini counter-attack); sub-arguments 2–3 partially hold
+**Trigger:** Layer 2 Epistemic Contradiction / §P1 Loophole (counter-attack); sub-arguments 2–3 partially hold
 
 ### Why addressed
 
@@ -1074,7 +1076,7 @@ The phase transition regime restriction reshapes $\mathsf{P4}$'s design guidance
 **Description:** $\mathsf{P1}$ Node Identity two-level distinction (topological position in transmitted graph vs. entailment-map position) not explained explicitly enough to foreclose distance-metric misreading; operator type equivalence not stated as functional/truth-table criterion
 **Source:** § $\mathsf{P1}$ Node Identity; § $\mathsf{P1}$ Definition item 3
 **Date:** 2026-04-18
-**Trigger:** Pass 20 — Topological Identity Contradiction (Gemini consistency attack); precision additions only; no structural concession
+**Trigger:** Topological Identity Contradiction (consistency attack); precision additions only; no structural concession
 
 ### Why addressed
 
@@ -1105,7 +1107,7 @@ The explicit two-level explanation closes a class of "identity-topology deadlock
 **Description:** Experimental programme description forward-promised Tower of Hanoi and Latin square as the next puzzle families for $\mathsf{P1}$ generalisation testing — both are undirected symmetric CSPs, structurally incompatible with $\mathsf{P1}$ directed entailment; replaced with directed inference DAGs
 **Source:** § Verification Asymmetry puzzle series description; progression table row; `abstract.md` line 30
 **Date:** 2026-09-04
-**Trigger:** Series limit established in `P_4_river_crossing.md` §12 (F42, committed 2026-09-03) and distilled into § Verification Asymmetry Empirical Calibration Note (F44)
+**Trigger:** Series limit from P_4 testbed; directed DAG testbed required
 
 ### Why addressed
 
@@ -1128,3 +1130,72 @@ The experimental programme claim is unchanged: it remains the only verification 
 ### Exploration value
 
 The structural disqualification of combinatorial CSPs (including Hanoi and Latin squares) as $\mathsf{P1}$ testbeds is a positive finding: it sharpens the required testbed class. Any puzzle or micro-world where the rules are undirected pair-exclusion or slot-filling constraints without premises, conclusions, or directed flow cannot be used as a $\mathsf{P1}$ testbed regardless of problem complexity. The required class is directed inference structures where nodes are propositions, edges are entailment relations, and operator types are explicitly typed (AND/OR/NOT or equivalent).
+
+---
+
+## §R14
+
+**Description:** $C_\pm$ notation renamed to $\mathcal{B}_\pm$ — Shannon channel capacity collision
+**Source:** SIRC_glossary.md §Notation; SIRC_principles.md §P2, §P3; SIRC_principles_retraction.md (header, §R2); README.md; constraint-graph_testbed_retraction.md
+**Date:** 2026-09-04
+**Retraction trigger:** §P2 grounding rewrite — elevating Rate-Distortion Theory and DPI to core grounding in §P2 forces notation to be coherent with Shannon's formalism; $C$ is Shannon's canonical symbol for channel capacity
+
+### Why retracted
+
+The original notation $C_-$ / $C_+$ used $C$ as the leading character for abstract concept boundaries. Shannon's 1948 paper establishes $C$ as channel capacity — one of the most recognisable symbols in information theory. The glossary addressed this with a disclaimer: *"Note: $C$ in SIRC denotes the abstract Concept structure, not Shannon channel capacity $C$..."*
+
+The §P2 grounding rewrite surfaced a logical trap: if Shannon's Source Coding Theorem and DPI are SIRC's formal grounding, readers validating that grounding will encounter $C_\pm$ in a document that explicitly invokes Shannon's $C$. A disclaimer cannot resolve this — it documents the collision rather than removing it. The notation must be clean in the audience context where the grounding is being checked.
+
+The rename is also a consistency check on the grounding claim itself: if $C_\pm$ could coexist with Shannon's $C$, that would be evidence Shannon is *not* the formal grounding. The decision to rename confirms that Shannon is.
+
+### Retracted content
+
+The subscript notation $C_-$ (negative boundary) and $C_+$ (positive boundary) used across:
+- SIRC_glossary.md §Notation table and definitions
+- SIRC_principles.md §P2 and §P3
+- SIRC_principles_retraction.md document header and §R2
+- README.md §P2 and §P3 descriptions
+- constraint-graph_testbed_retraction.md header and §R2 reference
+
+Also retracted: the glossary collision disclaimer, which was a structural workaround rather than a solution.
+
+### What replaces it
+
+$\mathcal{B}_-$ (negative boundary) and $\mathcal{B}_+$ (positive boundary), using $\mathcal{B}$ for Boundary. $\mathcal{B}$ is unused in Shannon (1948), in the Kolmogorov complexity literature, and in all four existing SIRC $\mathcal{...}$ symbols ($\mathcal{J}$, $\mathcal{R}$, $\mathcal{S}$, $\mathcal{G}$). The subscript form ($\mathcal{B}_-$ / $\mathcal{B}_+$) is preserved to maintain visual contrast with the superscript testbed notation ($\mathcal{J}^-$ / $\mathcal{J}^+$).
+
+The glossary disclaimer is replaced with: *"Note: $\mathcal{B}_\pm$ (abstract boundary notation) does not collide with Shannon channel capacity $C$ or Kolmogorov complexity $C(x)$. $\mathcal{B}$ is unused in both formalisms."*
+
+### Exploration value
+
+The rename forced a definitive answer to an implicit question that had been deferred: is Shannon's formalism SIRC's formal grounding, or a structural analogy? The logical dilemma (if Shannon IS the grounding, $C_\pm$ collides; if Shannon is NOT the grounding, the notation is moot) makes the rename a commitment device. Choosing $\mathcal{B}_\pm$ is the decision that Shannon is the grounding and that the notation must be coherent for that audience. This decision was confirmed by the §P2 grounding rewrite (see §R15).
+
+---
+
+## §R15
+
+**Description:** `*(O)*` Rate-Distortion argument retracted — "not a current grounding" claim contradicts elevation of RDT to co-primary grounding
+**Source:** SIRC_principles.md §P2 Grounding — `*(O)*` sub-item (Rate-Distortion structural analogy)
+**Date:** 2026-09-04
+**Retraction trigger:** §P2 grounding rewrite — elevating RDT to co-primary grounding; any surviving "not a current grounding" fragment creates adversarial self-citation
+
+### Why retracted
+
+When the §P2 grounding rewrite elevates Rate-Distortion Theory from structural analogy to co-primary grounding alongside DPI, the `*(O)*` sub-item's explicit claim — "Rate-Distortion Theory is a candidate formal framework for OQ2.1, not a current grounding" — directly contradicts the elevation. An adversary quoting that sentence after the elevation can argue the authors admitted RDT is only a candidate. A surviving disclaimer cannot be read as provisional when the same document also commits to RDT as core grounding. There is no partial elevation: the retraction is a required commitment.
+
+Note: §R7 retracted the original overclaim of RDT as a *formal bridge* (the P3 constraint-packet mapping) on grounds that the mapping lacked a defined distortion metric. §R15 is distinct — it retracts the subsequent demotion, which correctly diagnosed §R7's problem but overcorrected: "no quantitative metric → no grounding at all." The §P2 grounding rewrite resolves this by splitting the question. RDT grounds the *qualitative* necessity of loss ($D > 0$ via $R(0) = \infty$) without requiring a distortion metric; the *quantitative* curve is OQ2.1. This reading was not available when §R7 was written because the continuous-source argument had not yet been identified as the mechanism that does not require a metric.
+
+### Retracted content
+
+> `  - *Argument (structural analogy, rate-distortion theory):* *(O)* Rate-Distortion Theory (Shannon, 1959) characterises the tradeoff space above that floor — the minimum transmission rate required to reconstruct a source within a given distortion bound. The structural mapping to SIRC is visible: Rate corresponds to constraint packet strictness; Distortion corresponds to surface content mutation. This analogy becomes a formal bridge only if a quantitative distortion metric over surface content is defined — which SIRC does not currently provide. Rate-Distortion Theory is a candidate formal framework for OQ2.1, not a current grounding. $DPI$ establishes that loss exists; Rate-Distortion is where that formalization should eventually land.`
+
+### What replaces it
+
+Three items in the restructured §P2 Grounding block:
+
+- `*Argument (continuous-source rate bottleneck):*` — grounds qualitative loss necessity in $R(0) = \lim_{D \to 0} R(D) = \infty$ for continuous sources; requires no distortion metric.
+- `*Argument (discrete-source bottleneck):*` — grounds loss for discrete heterogeneous sources in the finite-channel condition ($I(S_{\text{send}}; Y) \le C < H(S_{\text{send}})$).
+- `*Scope (metric status):*` — preserves the OQ2.1 deferral at the correct level: RDT grounds the qualitative necessity of loss; the quantitative distortion-rate curve over specific surface embeddings requires an empirical metric SIRC does not yet provide.
+
+### Exploration value
+
+The §R7 → §R15 arc is a recalibration pattern: §R7 demoted RDT too far in response to a valid precision catch (missing distortion metric), and §R15 restores it to the right epistemic level. The correct level — qualitative necessity is grounded; quantitative curve is open — was not visible when §R7 was written because the continuous-source argument ($R(0) = \infty$ requires no metric) had not yet been identified. Once identified, it resolves the tension without reopening the §R7 problem: the metric deferral is intact in `*Scope (metric status):*`, and the grounding claim is narrowed to what the continuous-source argument actually delivers.

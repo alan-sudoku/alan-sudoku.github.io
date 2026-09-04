@@ -9,7 +9,7 @@ Four constraints on what a transmission must preserve to count as communication 
 | Constraint | Core claim |
 | :--- | :--- |
 | **$\mathsf{P1}$ — Invariance** | A transmission is valid if and only if the receiver's reconstruction preserves the sender's invariant structural properties. Surface form may differ; invariant structure must match. |
-| **$\mathsf{P2}$ — Entropy** | Full-state transmission is lossy by necessity (Data Processing Inequality). The protocol targets invariant preservation rather than full fidelity, because full fidelity is unachievable and invariant fidelity is the recoverable floor. |
+| **$\mathsf{P2}$ — Entropy** | Full-state transmission is lossy by necessity across a finite discrete interface between heterogeneous substrates (lossy source coding + data processing inequality). The protocol targets invariant preservation rather than full fidelity, because full fidelity is unachievable and invariant preservation is the required validity threshold ( $\mathsf{P1}$). |
 | **$\mathsf{P3}$ — Constraint Packet** | A packet encodes boundary conditions of a thought, not its content. The receiver reconstructs from its own capacity within those boundaries. The output may exceed the packet in size; it cannot exceed the boundaries. |
 | **$\mathsf{P4}$ — Work** | Sender and receiver work is inversely coupled in the over-constrained regime. No general design choice minimises both simultaneously. |
 
@@ -23,7 +23,7 @@ Four constraints on what a transmission must preserve to count as communication 
 | [SIRC_principles.md](SIRC_principles.md) | The Protocol Constraints — $\mathsf{P1}\text{–}\mathsf{P4}$ with proofs, open questions, and scope conditions. The positive channel: what survives audit. |
 | [SIRC_principles_retraction.md](SIRC_principles_retraction.md) | The retraction log — every claim probed and found absent. The negative channel: what was shed. |
 | [SIRC_principles_audit_prompt.md](SIRC_principles_audit_prompt.md) | Adversarial audit prompt — structured attacks for an AI auditor to run against the principles. |
-| [SIRC_glossary.md](SIRC_glossary.md) | Notation reference — $C_-$ / $C_+$ (abstract) vs. $\mathcal{J}^-$ / $\mathcal{J}^+$ (concrete state sets); not interchangeable. |
+| [SIRC_glossary.md](SIRC_glossary.md) | Notation reference — $\mathcal{B}_-$ / $\mathcal{B}_+$ (abstract) vs. $\mathcal{J}^-$ / $\mathcal{J}^+$ (concrete state sets); not interchangeable. |
 | [constraint-graph_testbed/P_3/P_3_river_crossing.md](constraint-graph_testbed/P_3/P_3_river_crossing.md) | First experiment — uses the Wolf–Goat–Cabbage $P_3$ River Crossing puzzle to make $\mathsf{P1}$'s node identity clause concrete. |
 | [constraint-graph_testbed/P_3/P_3_audit_prompt.md](constraint-graph_testbed/P_3/P_3_audit_prompt.md) | Section-by-section audit prompt for the $P_3$ experiment document. |
 | [constraint-graph_testbed/constraint-graph_testbed_retraction.md](constraint-graph_testbed/constraint-graph_testbed_retraction.md) | Retraction log for the experiment series. |
@@ -34,10 +34,10 @@ Four constraints on what a transmission must preserve to count as communication 
 
 ## Document pair structure
 
-Each document is one half of a $C_+$ / $C_-$ pair. The protocol described in $\mathsf{P2}$ applies to the documents themselves:
+Each document is one half of a $\mathcal{B}_+$ / $\mathcal{B}_-$ pair. The protocol described in $\mathsf{P2}$ applies to the documents themselves:
 
-- **Positive boundary ( $C_+$)** — the principles document and each experiment document. The invariant content that survived audit.
-- **Negative boundary ( $C_-$)** — the retraction log paired with it. What was probed and found non-invariant. Every shed claim is an entry; exploration value is recorded so the boundary information is recoverable.
+- **Positive boundary ( $\mathcal{B}_+$)** — the principles document and each experiment document. The invariant content that survived audit.
+- **Negative boundary ( $\mathcal{B}_-$)** — the retraction log paired with it. What was probed and found non-invariant. Every shed claim is an entry; exploration value is recorded so the boundary information is recoverable.
 
 Reading both halves is optional. Reading only the positive channel is reading a compressed result. Reading both is reading the full exploration record.
 
@@ -47,7 +47,7 @@ Reading both halves is optional. Reading only the positive channel is reading a 
 
 **Start here:** [SIRC_principles.md](SIRC_principles.md)— read the Preamble first, then $\mathsf{P1}\text{–}\mathsf{P4}$ in sequence. The Preamble explains why four independent fields are required and why $\mathsf{P2}$ is pedagogically first but not logically prior.
 
-**Notation questions:** [SIRC_glossary.md](SIRC_glossary.md) — the $C_-$ / $\mathcal{J}^-$ distinction matters before reading any experiment document.
+**Notation questions:** [SIRC_glossary.md](SIRC_glossary.md) — the $\mathcal{B}_-$ / $\mathcal{J}^-$ distinction matters before reading any experiment document.
 
 **Concrete grounding:** [constraint-graph_testbed/P_3/P_3_river_crossing.md](constraint-graph_testbed/P_3/P_3_river_crossing.md) — the river crossing puzzle is the simplest structure that makes $\mathsf{P1}$'s node identity clause non-trivial. Part I (§1–5) is formal; no prior SIRC knowledge required to verify the enumeration. Part III (§9–12) connects back to SIRC_principles.
 
@@ -58,10 +58,10 @@ Reading both halves is optional. Reading only the positive channel is reading a 
 ## How to read — by reader type
 
 **ML / AI researcher:**
-Start at $\mathsf{P1}$'s typed DAG definition and OQ1.1 (minimal vs. non-minimal dependency structure). $\mathsf{P3}$'s constraint packet is the engineering claim — what a sender must transmit for the receiver to reconstruct within bounds. $\mathsf{P4}$'s asymmetry theorem is where the protocol touches computational complexity. If reading the experiment documents: check [SIRC_glossary.md](SIRC_glossary.md) first — the $C_-$ / $\mathcal{J}^-$ distinction matters.
+Start at $\mathsf{P1}$'s typed DAG definition and OQ1.1 (minimal vs. non-minimal dependency structure). $\mathsf{P3}$'s constraint packet is the engineering claim — what a sender must transmit for the receiver to reconstruct within bounds. $\mathsf{P4}$'s asymmetry theorem is where the protocol touches computational complexity. If reading the experiment documents: check [SIRC_glossary.md](SIRC_glossary.md) first — the $\mathcal{B}_-$ / $\mathcal{J}^-$ distinction matters.
 
 **Formal logician / type theorist:**
-$\mathsf{P1}$'s entailment equivalence criterion is the definition on which P1-validity turns. OQ1.4 (inference-system dependence) is the known gap. The typed DAG operator requirement (AND, OR, NOT and equivalents) is the scope condition — read the Substrate scope subsection in the Preamble before evaluating the universality claim. If reading the experiment documents: check [SIRC_glossary.md](SIRC_glossary.md) first — the $C_-$ / $\mathcal{J}^-$ distinction matters.
+$\mathsf{P1}$'s entailment equivalence criterion is the definition on which P1-validity turns. OQ1.4 (inference-system dependence) is the known gap. The typed DAG operator requirement (AND, OR, NOT and equivalents) is the scope condition — read the Substrate scope subsection in the Preamble before evaluating the universality claim. If reading the experiment documents: check [SIRC_glossary.md](SIRC_glossary.md) first — the $\mathcal{B}_-$ / $\mathcal{J}^-$ distinction matters.
 
 **General reader (no technical background):**
 Use this prompt with an AI and [SIRC_principles.md](SIRC_principles.md) attached:
